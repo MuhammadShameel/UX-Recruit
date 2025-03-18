@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -20,7 +21,54 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  background-color: #020015;
+  padding: 56px 120px 0px 120px;
+}
+
+p{
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 9rem;
+}
+
+h2 {
+  font-size: 7.5rem;
+}
+
+h3 {
+  font-size: 5.25rem;
+}
+
+h4 {
+  font-size: 3.25rem;
+}
+
+h5{
+  font-size: 2.5rem;
+}
+
+.font-anton {
+  font-family: "Anton", sans-serif;
+  font-style: normal;
+}
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.primary-color {
+  color: #6155e1;
+}
+
+.secondary-color {
+  color: #62606f;
+}
+
+.pink-color {
+  color: #d68ccb;
 }

@@ -1,0 +1,110 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+import Logo from "../../public/assets/images/logo.png";
+
+export default function HeroSection() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <header>
+      {/* Navbar  */}
+      <nav>
+        <div className="max-w-6xl mx-auto ">
+          <div className="flex lg:justify-between md:justify-between  sm:justify-between  justify-center items-center">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <Image
+                src={Logo}
+                alt="logo"
+                className="lg:h-10 lg:w-[281px] md:h-10 md:w-[281px] sm:h-10 sm:w-[281px] h-6 w-[181px]"
+              />
+            </div>
+
+            {/* Menu Button (Bars) for Mobile */}
+
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              type="button"
+              className="focus:outline-none px-5 lg:px-0 md:px-0 sm:px-0 hover:cursor-pointer"
+            >
+              <span className="text-lg font-anton font-medium">
+                {isOpen ? "Close" : "Menu"}
+              </span>
+            </button>
+
+            {/* Navigation Links */}
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div>
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a href="/" className="block">
+                Home
+              </a>
+              <a href="/about" className="block">
+                About
+              </a>
+              <a href="/contact" className="block">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        )}
+      </nav>
+
+      {/* Hero Content  */}
+      <section className="relative text-white">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+          {/* Left Side: Text Content */}
+          <div className="lg:w-2/3 text-center lg:text-left mt-20">
+            <h2
+              className=" font-anton font-normal leading-[100%] uppercase"
+              style={{ letterSpacing: "-4px" }}
+            >
+              A FULL TEAM FOR{" "}
+              <span className="primary-color">
+                THE PRICE OF A SINGLE DESIGNER
+              </span>
+            </h2>
+            <svg
+              className="mt-[-25px]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="636"
+              height="50"
+              viewBox="0 0 636 50"
+              fill="none"
+            >
+              <path
+                d="M233.479 30.4598C291.107 33.9261 349.161 32.1305 406.867 32.1305C470.245 32.1305 533.013 34.448 596.035 41.7839C600.495 42.303 604.955 42.8255 609.401 43.4546C612.299 43.8647 619.129 42.8222 617.941 45.4967C616.05 49.7501 578.476 47.1647 577.1 47.1674C462.468 47.3985 347.833 47.1674 233.2 47.1674C156.491 47.1674 79.6135 48.6424 2.91331 47.1674C-1.61834 47.0803 11.9543 46.4966 16.4651 46.0536C45.3761 43.2141 74.0893 38.8601 103.066 36.5859C235.907 26.1605 370.635 32.1305 503.772 32.1305C545.077 32.1305 668.992 32.1305 627.687 32.1305C511.569 32.1305 395.45 32.1305 279.332 32.1305C239.574 32.1305 199.816 32.1305 160.058 32.1305C137.936 32.1305 204.302 32.1305 226.425 32.1305C353.279 32.1305 733.842 32.1305 606.988 32.1305C543.13 32.1305 479.791 21.9468 416.242 16.7224C363.997 12.4271 311.821 10.152 259.469 7.99726C242.145 7.28423 226.786 5.7673 210.088 2.05676"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+            <div className="flex mt-32">
+              <div>
+                <button className="px-10 py-6 bg-white text-[1.25rem]  leading-[120%] font-normal gap-2 font-anton items-center justify-center primary-color rounded-[64px] hover:opacity-80 transition">
+                  HIRE NOW
+                </button>
+              </div>
+              <div className="ml-[50px]">
+                <p className="font-semibold mt-2.5 leading-[160%] font-manrope">
+                  Get unlimited UI/UX design services with a simple monthly
+                  subscription. We specialize in helping non-technical founders
+                  bring their ideas to life with stunning, user-focused designs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side: Image with Overlay */}
+          <div className="lg:w-1/3 relative"></div>
+        </div>
+      </section>
+    </header>
+  );
+}
