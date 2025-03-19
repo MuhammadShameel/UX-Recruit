@@ -3,6 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import Logo from "../../public/assets/images/logo.png";
+import Border from "../../public/assets/images/hero-border.png";
+import Shade from "../../public/assets/images/hero-shade.png";
+// import heroVideo from "../../public/assets/images/";
 
 export default function HeroSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -105,7 +108,50 @@ export default function HeroSection() {
           </div>
 
           {/* Right Side: Image with Overlay */}
-          <div className="lg:w-1/3 relative"></div>
+          <div className="lg:w-1/3 relative">
+            {/* Base Image */}
+            <div className="relative lg:left-7">
+              <Image
+                src={Border}
+                width={395} // Exact width
+                height={576} // Exact height
+                alt="Base Image"
+                className="w-full h-auto rounded-[32px]"
+              />
+            </div>
+
+            {/* Video */}
+            <div
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] max-w-[395px] h-[60%] max-h-[576px] rounded-[192px] overflow-hidden z-20"
+              style={{
+                background:
+                  "linear-gradient(0deg, rgba(157, 3, 134, 0.12) 0%, rgba(157, 3, 134, 0.12) 100%)",
+              }}
+            >
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source
+                  src="/assets/images/bg-video-hero.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            {/* Overlay Image (Larger than Base Image) */}
+            <div className="absolute top-0 left-0 w-full h-full z-10">
+              <Image
+                src={Shade}
+                alt="Overlay Image"
+                className="relative top-24 -left-1 w-[80%] max-w-[395px] h-[60%] max-h-[576px] rounded-[32px] scale-150"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </header>
