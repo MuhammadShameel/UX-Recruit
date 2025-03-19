@@ -85,14 +85,17 @@ export default function HeroSection() {
                 stroke-linecap="round"
               />
             </svg>
-            <div className="flex mt-32">
-              <div>
-                <button className="px-10 py-6 bg-white text-[1.25rem]  leading-[120%] font-normal gap-2 font-anton items-center justify-center primary-color rounded-[64px] hover:opacity-80 transition">
+            <div className="grid grid-cols-12 gap-8 mt-32">
+              {/* First Column: Button (3 Columns) */}
+              <div className="col-span-3 flex justify-center md:justify-end">
+                <button className="px-10 py-6 bg-white text-[1.25rem] leading-[120%] font-normal gap-2 font-anton items-center justify-center primary-color rounded-[64px] hover:opacity-80 transition">
                   HIRE NOW
                 </button>
               </div>
-              <div className="ml-[50px]">
-                <p className="font-semibold mt-2.5 leading-[160%] font-manrope">
+
+              {/* Second Column: Text (9 Columns) */}
+              <div className="col-span-9 flex items-center">
+                <p className="font-semibold leading-[160%] font-manrope">
                   Get unlimited UI/UX design services with a simple monthly
                   subscription. We specialize in helping non-technical founders
                   bring their ideas to life with stunning, user-focused designs.
