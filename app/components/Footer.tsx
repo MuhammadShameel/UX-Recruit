@@ -4,9 +4,9 @@ import Logo from "../../public/assets/images/logo.png";
 
 const Footer = () => {
   return (
-    <div>
-      <hr className="mt-36 secondary-color" />
-      <div className=" text-center lg:text-left mt-20">
+    <div >
+      <hr className="mx-auto w-full max-w-screen-xl mt-36 secondary-color" />
+      <div className=" mx-auto w-full max-w-screen-xl text-center  lg:text-left mt-20">
         <h2
           className=" font-anton font-normal leading-[100%] uppercase"
           style={{ letterSpacing: "-4px" }}
