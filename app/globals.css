@@ -23,10 +23,10 @@
 body {
   color: #ffff;
   background-color: #020015;
-  padding: 56px 120px 0px 120px;
+  padding: 56px 90px 0px 90px;
 }
 
-p{
+p {
   font-size: 1rem;
 }
 
@@ -46,7 +46,7 @@ h4 {
   font-size: 3.25rem;
 }
 
-h5{
+h5 {
   font-size: 2.5rem;
 }
 
