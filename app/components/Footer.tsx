@@ -4,15 +4,15 @@ import Logo from "../../public/assets/images/logo.png";
 
 const Footer = () => {
   return (
-    <div >
+    <div>
       <hr className="mx-auto w-full max-w-screen-xl mt-36 secondary-color" />
       <div className=" mx-auto w-full max-w-screen-xl text-center  lg:text-left mt-20">
-        <h2
+        <h1
           className=" font-anton font-normal leading-[100%] uppercase"
           style={{ letterSpacing: "-4px" }}
         >
           LET’s BUILD AMAZING <span className="primary-color">EXPERIENCES</span>
-        </h2>
+        </h1>
         <svg
           className="mt-[-25px]"
           xmlns="http://www.w3.org/2000/svg"
