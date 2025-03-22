@@ -24,6 +24,7 @@ body {
   color: #ffff;
   background-color: #020015;
   padding: 56px 90px 88px 90px;
+  overflow-x: hidden !important;
 }
 
 /* Base font sizes */
@@ -172,3 +173,10 @@ img {
   max-width: 100%; /* Ensures images don't overflow */
   height: auto; /* Maintains aspect ratio */
 }
+
+.hero_top_left {
+  border: 0.725px solid #423c3c;
+  background: linear-gradient(180deg, #533d50 0%, #18171d 100%);
+  box-shadow: 0px 0px 10px 0px rgba(214, 140, 203, 0.8);
+}
+  
