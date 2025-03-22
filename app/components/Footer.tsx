@@ -8,8 +8,8 @@ const Footer = () => {
       <hr className="mx-auto w-full max-w-screen-xl mt-36 secondary-color" />
       <div className=" mx-auto w-full max-w-screen-xl text-center  lg:text-left mt-20">
         <h1
-          className=" font-anton font-normal leading-[100%] uppercase"
-          style={{ letterSpacing: "-4px" }}
+          className=" font-anton font-normal h1-footer leading-[100%] uppercase"
+          style={{ letterSpacing: "-4px"}}
         >
           LET’s BUILD AMAZING <span className="primary-color">EXPERIENCES</span>
         </h1>

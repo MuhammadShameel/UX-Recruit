@@ -26,28 +26,35 @@ body {
   padding: 56px 90px 88px 90px;
 }
 
+/* Base font sizes */
 p {
   font-size: 1rem;
 }
 
 h1 {
-  font-size: 9rem;
-}
-
-h2 {
   font-size: 7.5rem;
 }
 
-h3 {
+h2 {
   font-size: 5.25rem;
+  overflow-wrap: break-word; /* Ensures long words break and wrap */
+  word-break: break-word; /* Ensures long words break and wrap */
 }
 
-h4 {
+h3 {
   font-size: 3.25rem;
 }
 
-h5 {
+h4 {
   font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+.h1-footer {
+  font-size: 9rem !important;
 }
 
 .font-anton {
@@ -71,4 +78,97 @@ h5 {
 
 .pink-color {
   color: #d68ccb;
+}
+
+/* Responsive font sizes */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.75rem;
+  }
+
+  .h1-footer {
+    font-size: 6rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  .h1-footer {
+    font-size: 4.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px; /* Reduced padding for mobile */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjusted for mobile */
+  }
+
+  h2 {
+    font-size: 2rem; /* Adjusted for mobile */
+  }
+
+  h3 {
+    font-size: 1.5rem; /* Adjusted for mobile */
+  }
+
+  h4 {
+    font-size: 1.25rem; /* Adjusted for mobile */
+  }
+
+  h5 {
+    font-size: 1rem; /* Adjusted for mobile */
+  }
+
+  .h1-footer {
+    font-size: 3rem !important; /* Adjusted for mobile */
+  }
+
+  .py-12 {
+    padding-top: 1rem; /* Reduced padding for mobile */
+    padding-bottom: 1rem; /* Reduced padding for mobile */
+  }
+}
+
+img {
+  max-width: 100%; /* Ensures images don't overflow */
+  height: auto; /* Maintains aspect ratio */
 }
