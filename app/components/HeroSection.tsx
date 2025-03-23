@@ -77,14 +77,14 @@ export default function HeroSection() {
           <div className="lg:w-2/3 text-center lg:text-left mt-20">
             <h1
               className="font-anton font-normal leading-[100%] uppercase"
-              style={{ letterSpacing: "-4px" }}
+              style={{ letterSpacing: "-2px" }}
             >
               A FULL TEAM FOR{" "}
               <span className="primary-color">
                 THE PRICE OF A SINGLE DESIGNER
               </span>
             </h1>
-            <svg
+            {/* <svg
               className="mt-[-25px]"
               xmlns="http://www.w3.org/2000/svg"
               width="636"
@@ -98,7 +98,7 @@ export default function HeroSection() {
                 strokeWidth="3"
                 strokeLinecap="round"
               />
-            </svg>
+            </svg> */}
             <div className="grid grid-cols-12 gap-8 mt-32">
               {/* First Column: Button (3 Columns) */}
               <div className="col-span-3 flex justify-center md:justify-end">
