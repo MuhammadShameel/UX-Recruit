@@ -5,7 +5,7 @@ import Logo from "../../public/assets/images/logo.png";
 const Footer = () => {
   return (
     <div>
-      <hr className="mx-auto w-full max-w-screen-xl mt-36 secondary-color" />
+      <hr className="mx-auto container  w-full max-w-screen-xl mt-36 secondary-color" />
       <div className=" mx-auto w-full max-w-screen-xl text-center  lg:text-left mt-20">
         <h1
           className=" font-anton font-normal h1-footer leading-[100%] uppercase"

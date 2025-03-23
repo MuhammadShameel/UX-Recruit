@@ -2,7 +2,7 @@ import React from "react";
 
 const Numbers = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <hr className="mx-auto w-full max-w-screen-xl mt-10 secondary-color" />
       <div className="grid grid-cols-12 gap-8 pb-20 mt-20 ">
         <div className="lg:col-span-5 lg:items-start items-center col-span-12">

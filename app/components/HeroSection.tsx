@@ -71,7 +71,7 @@ export default function HeroSection() {
       </nav>
 
       {/* Hero Content */}
-      <section className="relative text-white">
+      <section className=" container mx-auto relative text-white">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
           {/* Left Side: Text Content */}
           <div className="lg:w-2/3 text-center lg:text-left mt-20">

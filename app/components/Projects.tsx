@@ -7,7 +7,7 @@ import CardFour from "../../public/assets/images/projects-card-three.png";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <hr className="mx-auto w-full max-w-screen-xl mt-10 secondary-color" />
       <h4 className="secondary-color font-anton mt-12">Projects</h4>
       <div className="grid grid-cols-12 gap-8 pb-20 mt-10">
