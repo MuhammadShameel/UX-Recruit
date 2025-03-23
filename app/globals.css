@@ -80,7 +80,7 @@ h5 {
 }
 
 .btn-primary {
-  color: #6155E1;
+  color: #6155e1;
   background: #fff;
 }
 
@@ -97,7 +97,7 @@ h5 {
 }
 
 .bg-light-grey {
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .bg-purple {
@@ -107,11 +107,9 @@ h5 {
 .text-outline {
   font-size: 17.5rem;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #62606F;
+  -webkit-text-stroke-color: #62606f;
   color: transparent;
 }
-
-
 
 .service-section svg {
   width: 80px;
@@ -122,7 +120,6 @@ h5 {
   min-width: 110px;
   width: 110px;
 }
-
 
 /* Responsive font sizes */
 
@@ -267,4 +264,47 @@ img {
   border: 0.725px solid #423c3c;
   background: linear-gradient(180deg, #533d50 0%, #18171d 100%);
   box-shadow: 0px 0px 10px 0px rgba(214, 140, 203, 0.8);
+}
+
+.table_td_bg {
+  /* background: linear-gradient(180deg, rgba(214, 140, 203, 0.20) 0%, rgba(2, 0, 21, 0.20) 100%); */
+  box-shadow: -1px 0 0 0 #555;
+  background-color: #211331;
+  /* border-bottom: 1px solid #555555; */
+}
+.table_border_left {
+  border-radius: 12px 12px 0 0;
+  background-color: #211331;
+  /* background: linear-gradient(180deg, rgba(214, 140, 203, 0.20) 0%, rgba(2, 0, 21, 0.20) 100%); */
+  box-shadow: -1px 0 0 0 #555;
+}
+
+/* Container for the table */
+.relative.overflow-x-auto {
+  max-width: 100%;
+  overflow-x: scroll; /* Always show scrollbar */
+  padding-bottom: 50px; /* Add space between table and scrollbar */
+  scrollbar-width: thin; /* Firefox: thin scrollbar */
+  scrollbar-color: #fff rgba(255, 255, 255, 0.3); /* Firefox: track (yellow) and thumb (white) */
+}
+
+/* Webkit Browsers (Chrome, Edge, Safari) */
+.relative.overflow-x-auto::-webkit-scrollbar {
+  width: 100%; /* Full width scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+/* Scrollbar thumb (draggable part) */
+.relative.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to right,
+    white,
+    rgba(255, 255, 255, 0.3)
+  ); /* White gradient */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar track (the line on which the scrollbar moves) */
+.relative.overflow-x-auto::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
 }

@@ -5,6 +5,7 @@ import Numbers from "./components/Numbers";
 import Process from "./components/Process";
 import Projects from "./components/Projects";
 import ServicesSection from "./components/ServicesSection";
+import Table from "./components/Table";
 
 export default function Home() {
   return (
@@ -14,8 +15,9 @@ export default function Home() {
       <Projects />
       <ServicesSection />
       <Process />
+      <Table />
       <Numbers />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
