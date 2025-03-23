@@ -92,6 +92,9 @@ const Projects = () => {
           </ul>
         </div>
       </div>
+      <button className="px-10 py-6 bg-white text-[1.25rem] leading-[120%] mx-auto flex font-normal gap-2 font-anton items-center justify-center primary-color rounded-[64px] hover:opacity-80 transition">
+        VIEW ALL
+      </button>
     </div>
   );
 };
