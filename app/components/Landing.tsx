@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import { Check, X } from "lucide-react";
-import Marquee from "./Marque";
+// import Marquee from "./Marque";
 
-import Border from "../../public/assets/images/hero-border.png";
-import Shade from "../../public/assets/images/hero-shade.png";
+// import Border from "../../public/assets/images/hero-border.png";
+// import Shade from "../../public/assets/images/hero-shade.png";
 import heroTopAvater from "../../public/assets/images/hero-top-avatar-1.svg";
 import star from "../../public/assets/images/star.svg";
-import heroShape from "../../public/assets/images/heroShape.svg";
+// import heroShape from "../../public/assets/images/heroShape.svg";
 import ServiceSvg from "../../public/assets/images/service_svg.svg";
 
 import imgTop from "../../public/assets/images/Img-Sect-Top.png";
@@ -41,17 +41,17 @@ import NumbersEllipse from "../../public/assets/images/numbers-ellipse.svg";
 
 const Landing = () => {
   // Array of avatar images
-  const avatars = [
-    heroTopAvater,
-    heroTopAvater,
-    heroTopAvater,
-    heroTopAvater,
-    heroTopAvater,
-    heroTopAvater,
-  ];
+  // const avatars = [
+  //   heroTopAvater,
+  //   heroTopAvater,
+  //   heroTopAvater,
+  //   heroTopAvater,
+  //   heroTopAvater,
+  //   heroTopAvater,
+  // ];
 
   // Array of star images
-  const stars = [star, star, star, star, star];
+  // const stars = [star, star, star, star, star];
   return (
     <div>
       {/* Hero Section  */}
