@@ -36,7 +36,7 @@ export default function Marquee() {
 
   return (
     <div
-      className="w-full cursor-grab mt-10 overflow-hidden py-4 relative"
+      className="w-full cursor-grab mt-10 overflow-hidden mb-20 relative"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -52,13 +52,16 @@ export default function Marquee() {
       >
         {/* Marquee items */}
         {[...Array(10)].map((_, i) => (
-          <div key={i} className="rounded-lg cursor-pointer">
+          <div
+            key={i}
+            className="flex-shrink-0  rounded-lg w-40 md:w-64  sm:w-52"
+          >
             <Image
-              src={marqueImg} // Using the same imported image
-              // width={300}
-              // height={300}
+              src={marqueImg}
               alt="Marquee item"
-              className="rounded-lg object-cover"
+              width={300}
+              height={300}
+              className="h-full rounded-lg w-full object-cover"
             />
           </div>
         ))}
