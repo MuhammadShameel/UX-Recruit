@@ -4,12 +4,12 @@ import Logo from "../../public/assets/images/logo.png";
 
 const Footer = () => {
   return (
-    <div>
-      <hr className="mx-auto container  w-full max-w-screen-xl mt-36 secondary-color" />
-      <div className=" mx-auto w-full max-w-screen-xl text-center  lg:text-left mt-20">
+    <div className="container mx-auto px-4">
+      <hr className="container w-full mt-36 mx-auto secondary-color" />
+      <div className=" w-full text-left max-w-screen-xl mt-20 mx-auto">
         <h1
-          className=" font-anton font-normal h1-footer leading-[100%] uppercase"
-          style={{ letterSpacing: "-4px"}}
+          className="font-anton font-normal h1-footer leading-[100%] uppercase"
+          style={{ letterSpacing: "-4px" }}
         >
           LET’s BUILD AMAZING <span className="primary-color">EXPERIENCES</span>
         </h1>
@@ -30,7 +30,7 @@ const Footer = () => {
         </svg>
         <div className="flex mt-[60px]">
           <div>
-            <button className="px-10 py-6 bg-white text-[1.25rem]  leading-[120%] font-normal gap-2 font-anton items-center justify-center primary-color rounded-[64px] hover:opacity-80 transition">
+            <button className="bg-white justify-center rounded-[64px] text-[1.25rem] font-anton font-normal gap-2 hover:opacity-80 items-center leading-[120%] primary-color px-10 py-6 transition">
               HIRE ME NOW
             </button>
           </div>
@@ -38,18 +38,18 @@ const Footer = () => {
       </div>
 
       <footer className="mt-28">
-        <div className="mx-auto w-full max-w-screen-xl ">
+        <div className="w-full max-w-screen-xl mx-auto">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
               <Image
                 src={Logo}
                 alt="logo"
-                className="lg:h-10 lg:w-[281px] md:h-10 md:w-[281px] sm:h-10 sm:w-[281px] h-6 w-[181px]"
+                className="h-6 w-[181px] lg:h-10 lg:w-[281px] md:h-10 md:w-[281px] sm:h-10 sm:w-[281px]"
               />
             </div>
-            <div className="grid grid-cols-2 gap-8  ">
+            <div className="grid grid-cols-2 gap-8">
               <div>
-                <ul className=" text-left font-anton text-2xl font-medium">
+                <ul className="text-2xl text-left font-anton font-medium">
                   <li>
                     <a className="hover:underline">WORK</a>
                   </li>
@@ -65,7 +65,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <ul className=" text-left font-anton text-2xl  font-medium">
+                <ul className="text-2xl text-left font-anton font-medium">
                   <li>
                     <a className="hover:underline">INSTAGRAM</a>
                   </li>
@@ -76,22 +76,22 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="sm:flex sm:items-center mt-20 sm:justify-between">
-            <span className="text-sm  sm:text-center secondary-color font-anton ">
+          <div className="mt-20 sm:flex sm:items-center sm:justify-between">
+            <span className="text-sm font-anton secondary-color sm:text-center">
               2024
             </span>
             <div className="grid grid-cols-2 gap-24">
               <div>
-                <ul className=" text-left  text font-anton secondary-color font-medium">
+                <ul className="text-left font-anton font-medium secondary-color text">
                   <li>
-                    <p className="hover:underline  ">WORK</p>
+                    <p className="hover:underline">WORK</p>
                   </li>
                 </ul>
               </div>
               <div>
-                <ul className=" text-left font-anton secondary-color font-medium">
+                <ul className="text-left font-anton font-medium secondary-color">
                   <li>
-                    <p className="hover:underline  ">INSTAGRAM</p>
+                    <p className="hover:underline">INSTAGRAM</p>
                   </li>
                 </ul>
               </div>

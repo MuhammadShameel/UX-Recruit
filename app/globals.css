@@ -308,3 +308,46 @@ img {
 .relative.overflow-x-auto::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.3);
 }
+
+.hero_top_left {
+  border: 0.725px solid #423c3c;
+  background: linear-gradient(180deg, #533d50 0%, #18171d 100%);
+  box-shadow: 0px 0px 10px 0px rgba(214, 140, 203, 0.8);
+}
+.hero_base_img {
+  width: 385px;
+}
+
+@media (max-width: 480px) {
+  .hero_base_img {
+    width: 92%;
+  }
+  .overlay_img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_base_img {
+    width: 92%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero_base_img {
+    width: 385px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
