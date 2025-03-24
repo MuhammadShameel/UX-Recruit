@@ -196,10 +196,9 @@ h5 {
 }
 
 @media (max-width: 480px) {
-  body {
-    /* padding: 20px; */
-    /* Reduced padding for mobile */
-  }
+  /* body {
+  
+  } */
 
   h1 {
     font-size: 2.5rem;
