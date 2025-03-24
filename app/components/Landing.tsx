@@ -142,7 +142,7 @@ const Landing = () => {
             </div>
 
             {/* Left Card */}
-            <div className="p-2.5 rounded-lg w-fit -right-5 absolute hero_top_left md:-right-14 top-5 z-20">
+            <div className="p-2.5 rounded-lg w-fit lg:-right-5 right-0 sm:-right-5 absolute hero_top_left md:-right-14 top-5 z-20">
               {/* Avatar Images */}
               <div className="flex mb-2.5">
                 {avatars.map((avatar, index) => (
