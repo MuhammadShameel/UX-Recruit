@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import Logo from "../../public/assets/images/logo.png";
+import { Link } from "lucide-react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,15 +38,15 @@ export const Navbar = () => {
           {isOpen && (
             <div>
               <div className="pb-3 pt-2 px-2 sm:px-3 space-y-1">
-                <a href="/" className="block">
+                <Link href="/" className="block">
                   Home
-                </a>
-                <a href="/about" className="block">
+                </Link>
+                <Link href="/about" className="block">
                   About
-                </a>
-                <a href="/contact" className="block">
+                </Link>
+                <Link href="/contact" className="block">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           )}
