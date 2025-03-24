@@ -5,8 +5,8 @@ import { Check, X } from "lucide-react";
 
 // import Border from "../../public/assets/images/hero-border.png";
 // import Shade from "../../public/assets/images/hero-shade.png";
-import heroTopAvater from "../../public/assets/images/hero-top-avatar-1.svg";
-import star from "../../public/assets/images/star.svg";
+// import heroTopAvater from "../../public/assets/images/hero-top-avatar-1.svg";
+// import star from "../../public/assets/images/star.svg";
 // import heroShape from "../../public/assets/images/heroShape.svg";
 import ServiceSvg from "../../public/assets/images/service_svg.svg";
 
