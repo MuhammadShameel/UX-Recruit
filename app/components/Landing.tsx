@@ -8,6 +8,7 @@ import Shade from "../../public/assets/images/hero-shade.png";
 import heroTopAvater from "../../public/assets/images/hero-top-avatar-1.svg";
 import star from "../../public/assets/images/star.svg";
 import heroShape from "../../public/assets/images/heroShape.svg";
+import ServiceSvg from "../../public/assets/images/service_svg.svg";
 
 import imgTop from "../../public/assets/images/Img-Sect-Top.png";
 import imgBottom from "../../public/assets/images/Img-Sect-Bottom.png";
@@ -18,16 +19,25 @@ import CardImgFour from "../../public/assets/images/image-card-4.png";
 import CardImgFive from "../../public/assets/images/image-card-5.png";
 import CardImgSix from "../../public/assets/images/image-card-6.png";
 
+import ProjectsLine from "../../public/assets/images/projects-line.svg";
+import ProjectsEllipse from "../../public/assets/images/projects-ellipse.svg";
+import ProjectsEllipseTwo from "../../public/assets/images/project-ellipse-two.svg";
 import CardOne from "../../public/assets/images/projects-card-one.png";
 import CardTwo from "../../public/assets/images/projects-card-two.png";
 import CardThree from "../../public/assets/images/projects-card-four.png";
 import CardFour from "../../public/assets/images/projects-card-three.png";
 
+import ProcessEllipse from "../../public/assets/images/process-ellipse.svg";
 import discoveryIcon from "../../public/assets/images/book-discovery-icon.png";
 import designIcon from "../../public/assets/images/add-design-icon.png";
 import createIcon from "../../public/assets/images/create-design-icon.png";
 import requestIcon from "../../public/assets/images/request-revision-icon.png";
 import trackIcon from "../../public/assets/images/track-manage-icon.png";
+
+import AboutEllipse from "../../public/assets/images/about_ellipse.svg";
+import AboutRoundEllipse from "../../public/assets/images/about-round-ellipse.svg";
+
+import NumbersEllipse from "../../public/assets/images/numbers-ellipse.svg";
 
 const Landing = () => {
   // Array of avatar images
@@ -199,222 +209,281 @@ const Landing = () => {
       </section>
       <Marquee />
       {/* About Section  */}
-      <div className="container w-full mx-auto px-4">
-        <hr className="mt-10 secondary-color" />
-        <div className="grid grid-cols-12 gap-8 mt-10 pb-20">
-          {/* Left Side: Text Content (5 columns) */}
-          <div className="col-span-12 text-center lg:col-span-7 lg:text-left">
-            <h4 className="font-anton secondary-color">About</h4>
-            <h2
-              className="font-anton font-normal leading-[110%] uppercase"
-              style={{ letterSpacing: "-1px" }}
-            >
-              Design Products Your Users Will Love Within Your Budget and
-              Timeline
-            </h2>
-            <p className="font-manrope font-semibold leading-[160%] mt-[50px]">
-              Most design agencies only focus on aesthetics, but great design
-              goes beyond visuals. You need a partner who understands user
-              behavior, brand identity, and the bigger picture. Most
-              importantly, you need a team that shares your vision and cares
-              about your product as much as you do.
-            </p>
-          </div>
+      <section className="px-4 overflow-x-hidden">
+        <div className="container mx-auto ">
+          <hr className="mt-10 secondary-color" />
+          <div className="grid grid-cols-12 gap-8 mt-10 pb-20">
+            {/* Left Side: Text Content (5 columns) */}
+            <div className="col-span-12 text-center lg:col-span-7 lg:text-left">
+              <h4 className="font-anton secondary-color">About</h4>
+              <h2
+                className="font-anton font-normal leading-[110%] uppercase"
+                style={{ letterSpacing: "-1px" }}
+              >
+                Design Products Your Users Will Love Within Your Budget and
+                Timeline
+              </h2>
+              <p className="font-manrope font-semibold leading-[160%] mt-[50px]">
+                Most design agencies only focus on aesthetics, but great design
+                goes beyond visuals. You need a partner who understands user
+                behavior, brand identity, and the bigger picture. Most
+                importantly, you need a team that shares your vision and cares
+                about your product as much as you do.
+              </p>
+            </div>
 
-          {/* Right Side: Image with Overlay (7 columns) */}
-          <div className="col-span-12 flex justify-center items-center lg:col-span-5 relative">
-            {/* Image container */}
-            <div className="flex flex-col justify-center w-full items-center mx-auto">
-              <Image src={imgTop} className="my-10" alt="img not found" />
-              <Image src={imgBottom} className="my-10" alt="img not found" />
+            {/* Right Side: Image with Overlay (7 columns) */}
+            <div className="col-span-12 flex justify-center items-center lg:col-span-5 relative">
+              {/* Image container */}
+              <div className="flex flex-col justify-center w-full items-center mx-auto">
+                <div className="my-10 relative">
+                  <Image src={imgTop} alt="img not found" />
+                  <Image
+                    src={AboutEllipse}
+                    className="absolute translate-y-[-13%] top-[-50%] w-full -z-1"
+                    alt="img not found"
+                  />
+                </div>
+                <div className="my-10 relative">
+                  <Image src={imgBottom} alt="img not found" />
+                  <Image
+                    src={AboutEllipse}
+                    className="absolute translate-y-[-15%] top-[-50%] w-full -z-1"
+                    alt="img not found"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-4xl text-black mt-5 px-7 relative">
+            <Image
+              src={AboutRoundEllipse}
+              className="absolute top-0 -z-1 translate-y-[-100%]"
+              alt="img not found"
+            />
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2">
+              {/* Repeat this block 6 times for 6 cards */}
+              <div className="overflow-hidden py-12">
+                <Image
+                  src={CardImgOne}
+                  alt="img not found"
+                  className="w-full"
+                />
+                <div className="mt-10">
+                  <h5 className="text-xl font-anton mt-4">
+                    A Dedicated Design Team
+                  </h5>
+                  <p className="text-black font-manrope mt-2">
+                    Forget the hassle of hiring and managing multiple designers
+                    or freelancers. With us, you get a dedicated team, including
+                    a UI/UX Designer, Visual Designer, and a Creative Project
+                    Manager, all for the price of a single hire.
+                  </p>
+                </div>
+              </div>
+              <div className="overflow-hidden py-12">
+                <Image
+                  src={CardImgTwo}
+                  alt="img not found"
+                  className="w-full"
+                />
+                <div className="mt-10">
+                  <h5 className="text-xl font-anton mt-4">
+                    Real-Time Design Collaboration
+                  </h5>
+                  <p className="text-black font-manrope mt-2">
+                    Access a live project dashboard where you can review
+                    designs, request unlimited revisions, and communicate
+                    directly with your design team. Transparency and
+                    collaboration are at the heart of our process.
+                  </p>
+                </div>
+              </div>{" "}
+              <div className="overflow-hidden py-12">
+                <Image
+                  src={CardImgThree}
+                  alt="img not found"
+                  className="w-full"
+                />
+                <div className="mt-10">
+                  <h5 className="text-xl font-anton mt-4">
+                    Faster Design Cycles
+                  </h5>
+                  <p className="text-black font-manrope mt-2">
+                    Our proven design workflows eliminate delays and minimize
+                    feedback loops. Experience up to 4x faster project
+                    turnarounds compared to traditional design services.
+                  </p>
+                </div>
+              </div>{" "}
+              <div className="overflow-hidden py-12">
+                <Image
+                  src={CardImgFour}
+                  alt="img not found"
+                  className="w-full"
+                />
+                <div className="mt-10">
+                  <h5 className="text-xl font-anton mt-4">
+                    Weekly Active Design Sprints
+                  </h5>
+                  <p className="text-black font-manrope mt-2">
+                    We approach each week with focused design sprints,
+                    delivering prioritized tasks and updates on a weekly basis.
+                    This ensures consistent progress and rapid delivery of
+                    high-quality designs.
+                  </p>
+                </div>
+              </div>{" "}
+              <div className="overflow-hidden py-12">
+                <Image
+                  src={CardImgFive}
+                  alt="img not found"
+                  className="w-full"
+                />
+                <div className="mt-10">
+                  <h5 className="text-xl font-anton mt-4">
+                    Unlimited Tasks & Revisions
+                  </h5>
+                  <p className="text-black font-manrope mt-2">
+                    Once subscribed, you unlock unlimited design requests.
+                    Whether it's creating a mobile app interface, rebranding
+                    your website, or designing a complete SaaS dashboard, we've
+                    got you covered. Revisions are unlimited to ensure the final
+                    product aligns perfectly with your vision.
+                  </p>
+                </div>
+              </div>{" "}
+              <div className="overflow-hidden py-12">
+                <Image
+                  src={CardImgSix}
+                  alt="img not found"
+                  className="w-full"
+                />
+                <div className="mt-10">
+                  <h5 className="text-xl font-anton mt-4">
+                    We’re Not Just Designers, We’re Your Partners
+                  </h5>
+                  <p className="text-black font-manrope mt-2">
+                    You’re not just another client to us. You’re a partner.
+                    That’s why we offer resources and strategic support to help
+                    you launch and scale your product.
+                  </p>
+                </div>
+              </div>
+              {/* Repeat the above block 5 more times */}
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-4xl text-black mt-5 px-7">
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2">
-            {/* Repeat this block 6 times for 6 cards */}
-            <div className="overflow-hidden py-12">
-              <Image src={CardImgOne} alt="img not found" className="w-full" />
-              <div className="mt-10">
-                <h5 className="text-xl font-anton mt-4">
-                  A Dedicated Design Team
-                </h5>
-                <p className="text-black font-manrope mt-2">
-                  Forget the hassle of hiring and managing multiple designers or
-                  freelancers. With us, you get a dedicated team, including a
-                  UI/UX Designer, Visual Designer, and a Creative Project
-                  Manager, all for the price of a single hire.
-                </p>
-              </div>
-            </div>
-            <div className="overflow-hidden py-12">
-              <Image src={CardImgTwo} alt="img not found" className="w-full" />
-              <div className="mt-10">
-                <h5 className="text-xl font-anton mt-4">
-                  Real-Time Design Collaboration
-                </h5>
-                <p className="text-black font-manrope mt-2">
-                  Access a live project dashboard where you can review designs,
-                  request unlimited revisions, and communicate directly with
-                  your design team. Transparency and collaboration are at the
-                  heart of our process.
-                </p>
-              </div>
-            </div>{" "}
-            <div className="overflow-hidden py-12">
-              <Image
-                src={CardImgThree}
-                alt="img not found"
-                className="w-full"
-              />
-              <div className="mt-10">
-                <h5 className="text-xl font-anton mt-4">
-                  Faster Design Cycles
-                </h5>
-                <p className="text-black font-manrope mt-2">
-                  Our proven design workflows eliminate delays and minimize
-                  feedback loops. Experience up to 4x faster project turnarounds
-                  compared to traditional design services.
-                </p>
-              </div>
-            </div>{" "}
-            <div className="overflow-hidden py-12">
-              <Image src={CardImgFour} alt="img not found" className="w-full" />
-              <div className="mt-10">
-                <h5 className="text-xl font-anton mt-4">
-                  Weekly Active Design Sprints
-                </h5>
-                <p className="text-black font-manrope mt-2">
-                  We approach each week with focused design sprints, delivering
-                  prioritized tasks and updates on a weekly basis. This ensures
-                  consistent progress and rapid delivery of high-quality
-                  designs.
-                </p>
-              </div>
-            </div>{" "}
-            <div className="overflow-hidden py-12">
-              <Image src={CardImgFive} alt="img not found" className="w-full" />
-              <div className="mt-10">
-                <h5 className="text-xl font-anton mt-4">
-                  Unlimited Tasks & Revisions
-                </h5>
-                <p className="text-black font-manrope mt-2">
-                  Once subscribed, you unlock unlimited design requests. Whether
-                  it's creating a mobile app interface, rebranding your website,
-                  or designing a complete SaaS dashboard, we've got you covered.
-                  Revisions are unlimited to ensure the final product aligns
-                  perfectly with your vision.
-                </p>
-              </div>
-            </div>{" "}
-            <div className="overflow-hidden py-12">
-              <Image src={CardImgSix} alt="img not found" className="w-full" />
-              <div className="mt-10">
-                <h5 className="text-xl font-anton mt-4">
-                  We’re Not Just Designers, We’re Your Partners
-                </h5>
-                <p className="text-black font-manrope mt-2">
-                  You’re not just another client to us. You’re a partner. That’s
-                  why we offer resources and strategic support to help you
-                  launch and scale your product.
-                </p>
-              </div>
-            </div>
-            {/* Repeat the above block 5 more times */}
-          </div>
-        </div>
-      </div>
+      </section>
 
       {/* Projects Section  */}
-      <div className="container mx-auto px-4">
-        <hr className="w-full mt-10 mx-auto secondary-color" />
-        <h4 className="font-anton mt-12 secondary-color">Projects</h4>
-        <div className="grid grid-cols-12 gap-8 mt-10 pb-20">
-          <div className="col-span-12 flex flex-col items-center lg:col-span-6 lg:items-start">
-            <Image src={CardOne} alt="img not found" />
-            <h4
-              className="font-anton font-normal leading-[110%] mt-10"
-              style={{ letterSpacing: "-1px" }}
-            >
-              NOVELIST WEBSITE
-            </h4>
-            <ul className="flex mt-2">
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                IOS
-              </li>
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                SWIFT UI
-              </li>
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                NODE.JS
-              </li>
-            </ul>
+      <section className="px-4 relative">
+        <Image
+          src={ProjectsLine}
+          className="absolute right-0 top-0 mt-12 w-[50%] sm:w-auto"
+          alt="img not found"
+        />
+        <Image
+          src={ProjectsEllipse}
+          className="absolute right-0 top-0 translate-y-[-50%] -z-1"
+          alt="img not found"
+        />
+        <div className="container mx-auto">
+          <hr className="w-full mt-10 mx-auto secondary-color" />
+          <h4 className="font-anton mt-12 secondary-color">Projects</h4>
+          <div className="grid grid-cols-12 gap-8 mt-10 pb-20">
+            <div className="col-span-12 flex flex-col items-center lg:col-span-6 lg:items-start">
+              <Image src={CardOne} alt="img not found" />
+              <h4
+                className="font-anton font-normal leading-[110%] mt-10"
+                style={{ letterSpacing: "-1px" }}
+              >
+                NOVELIST WEBSITE
+              </h4>
+              <ul className="flex mt-2">
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  IOS
+                </li>
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  SWIFT UI
+                </li>
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  NODE.JS
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-12 flex flex-col text-right items-center lg:col-span-6 lg:items-start">
+              <Image src={CardTwo} alt="img not found" />
+              <h4
+                className="font-anton font-normal leading-[110%] mt-10"
+                style={{ letterSpacing: "-1px" }}
+              >
+                NOVELIST WEBSITE
+              </h4>
+              <ul className="flex justify-end mt-2">
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  IOS
+                </li>
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  SWIFT UI
+                </li>
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  NODE.JS
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-12 flex flex-col items-center lg:col-span-6 lg:items-start lg:mt-20">
+              <Image src={CardThree} alt="img not found" />
+              <h4
+                className="font-anton font-normal leading-[110%] mt-10"
+                style={{ letterSpacing: "-1px" }}
+              >
+                NOVELIST WEBSITE
+              </h4>
+              <ul className="flex mt-2">
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  IOS
+                </li>
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  SWIFT UI
+                </li>
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  NODE.JS
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-12 flex flex-col text-right items-center lg:col-span-6 lg:items-start lg:mt-20">
+              <Image src={CardFour} alt="img not found" />
+              <h4
+                className="font-anton font-normal leading-[110%] mt-10"
+                style={{ letterSpacing: "-1px" }}
+              >
+                NOVELIST WEBSITE
+              </h4>
+              <ul className="flex justify-end mt-2">
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  IOS
+                </li>
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  SWIFT UI
+                </li>
+                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
+                  NODE.JS
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="col-span-12 flex flex-col text-right items-center lg:col-span-6 lg:items-start">
-            <Image src={CardTwo} alt="img not found" />
-            <h4
-              className="font-anton font-normal leading-[110%] mt-10"
-              style={{ letterSpacing: "-1px" }}
-            >
-              NOVELIST WEBSITE
-            </h4>
-            <ul className="flex justify-end mt-2">
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                IOS
-              </li>
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                SWIFT UI
-              </li>
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                NODE.JS
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-12 flex flex-col items-center lg:col-span-6 lg:items-start lg:mt-20">
-            <Image src={CardThree} alt="img not found" />
-            <h4
-              className="font-anton font-normal leading-[110%] mt-10"
-              style={{ letterSpacing: "-1px" }}
-            >
-              NOVELIST WEBSITE
-            </h4>
-            <ul className="flex mt-2">
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                IOS
-              </li>
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                SWIFT UI
-              </li>
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                NODE.JS
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-12 flex flex-col text-right items-center lg:col-span-6 lg:items-start lg:mt-20">
-            <Image src={CardFour} alt="img not found" />
-            <h4
-              className="font-anton font-normal leading-[110%] mt-10"
-              style={{ letterSpacing: "-1px" }}
-            >
-              NOVELIST WEBSITE
-            </h4>
-            <ul className="flex justify-end mt-2">
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                IOS
-              </li>
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                SWIFT UI
-              </li>
-              <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                NODE.JS
-              </li>
-            </ul>
-          </div>
+          <button className="flex bg-white justify-center rounded-[64px] text-[1.25rem] font-anton font-normal gap-2 hover:opacity-80 items-center leading-[120%] mx-auto primary-color px-10 py-6 transition">
+            VIEW ALL
+          </button>
         </div>
-        <button className="flex bg-white justify-center rounded-[64px] text-[1.25rem] font-anton font-normal gap-2 hover:opacity-80 items-center leading-[120%] mx-auto primary-color px-10 py-6 transition">
-          VIEW ALL
-        </button>
-      </div>
+
+        <Image
+          src={ProjectsEllipseTwo}
+          className="absolute left-0 bottom-[-50%] -z-1"
+          alt="img not found"
+        />
+      </section>
 
       {/* Service section  */}
       <section className="bg-purple lg:pb-32 mt-14 overflow-hidden pt-24 px-4 relative service-section">
@@ -546,11 +615,21 @@ const Landing = () => {
             <br />
             VICES
           </h2>
+          <Image
+            className="absolute left-0 bottom-[10%] lg:bottom-[20%] w-[50%] sm:w-auto"
+            src={ServiceSvg}
+            alt="img not found"
+          />
         </div>
       </section>
 
       {/* Process Section  */}
-      <section className="process-section px-4">
+      <section className="process-section px-4 relative">
+        <Image
+          className="absolute top-[-50%] left-0 -z-1"
+          src={ProcessEllipse}
+          alt="img not found"
+        />
         <div className="container mx-auto">
           <hr className="mt-24 secondary-color" />
           <h4 className="font-anton mb-14 mt-12 secondary-color uppercase">
@@ -936,58 +1015,65 @@ const Landing = () => {
       </section>
 
       {/* InNumbers Section  */}
-      <div className="container mx-auto px-4">
-        <div className="border-[#62606f] border-t mt-20 pt-40">
-          <div className="grid grid-cols-12 gap-6">
-            {/* First Div: 4 columns on desktop, 12 columns on mobile */}
-            <div className="col-span-12 lg:col-span-6">
-              {/* Content for the first div */}
-              <h2 className="text-[#62606F] text-[20px] font-anton lg:-mt-6 lg:mb-[100px] lg:text-[40px] mb-0 uppercase">
-                IN NUMBERS
-              </h2>
-            </div>
+      <section className="px-4 relative">
+        <Image
+          className="absolute bottom-[-100%] translate-y-[15%] left-0 -z-1"
+          src={NumbersEllipse}
+          alt="img not found"
+        />
+        <div className="container mx-auto">
+          <div className="border-[#62606f] border-t mt-20 pt-40">
+            <div className="grid grid-cols-12 gap-6">
+              {/* First Div: 4 columns on desktop, 12 columns on mobile */}
+              <div className="col-span-12 lg:col-span-6">
+                {/* Content for the first div */}
+                <h2 className="text-[#62606F] text-[20px] font-anton lg:-mt-6 lg:mb-[100px] lg:text-[40px] mb-0 uppercase">
+                  IN NUMBERS
+                </h2>
+              </div>
 
-            {/* Second Div: 8 columns on desktop, 12 columns on mobile */}
-            <div className="col-span-12 lg:col-span-6">
-              {/* Content for the second div */}
-              <p className="text-xs lg:mb-16 lg:text-lg mb-[24px]">
-                Our UI/UX recruitment agency specializes in connecting top
-                design talent with the right opportunities. Using advanced
-                hiring tools and platforms like Behance, Dribbble, and LinkedIn,
-                we streamline the recruitment process. Our tailored screening
-                ensures businesses find the perfect fit, making hiring seamless
-                and efficient.
-              </p>
-              <div className="grid grid-cols-12 gap-3 lg:mb-[120px] mb-16">
-                <div className="col-span-4">
-                  <h2 className="font-anton leading-[35px] lg:leading-[85px]">
-                    200+
-                  </h2>
-                  <p className="text-[#62606F] text-xs lg:text-lg">
-                    Projects completed
-                  </p>
-                </div>
-                <div className="col-span-4">
-                  <h2 className="font-anton leading-[35px] lg:leading-[85px]">
-                    20+
-                  </h2>
-                  <p className="text-[#62606F] text-xs lg:text-lg">
-                    Rework customers
-                  </p>
-                </div>
-                <div className="col-span-4">
-                  <h2 className="font-anton leading-[35px] lg:leading-[85px]">
-                    5+
-                  </h2>
-                  <p className="text-[#62606F] text-xs lg:text-lg">
-                    Years experience
-                  </p>
+              {/* Second Div: 8 columns on desktop, 12 columns on mobile */}
+              <div className="col-span-12 lg:col-span-6">
+                {/* Content for the second div */}
+                <p className="text-xs lg:mb-16 lg:text-lg mb-[24px]">
+                  Our UI/UX recruitment agency specializes in connecting top
+                  design talent with the right opportunities. Using advanced
+                  hiring tools and platforms like Behance, Dribbble, and
+                  LinkedIn, we streamline the recruitment process. Our tailored
+                  screening ensures businesses find the perfect fit, making
+                  hiring seamless and efficient.
+                </p>
+                <div className="grid grid-cols-12 gap-3 lg:mb-[120px] mb-16">
+                  <div className="col-span-4">
+                    <h2 className="font-anton leading-[35px] lg:leading-[85px]">
+                      200+
+                    </h2>
+                    <p className="text-[#62606F] text-xs lg:text-lg">
+                      Projects completed
+                    </p>
+                  </div>
+                  <div className="col-span-4">
+                    <h2 className="font-anton leading-[35px] lg:leading-[85px]">
+                      20+
+                    </h2>
+                    <p className="text-[#62606F] text-xs lg:text-lg">
+                      Rework customers
+                    </p>
+                  </div>
+                  <div className="col-span-4">
+                    <h2 className="font-anton leading-[35px] lg:leading-[85px]">
+                      5+
+                    </h2>
+                    <p className="text-[#62606F] text-xs lg:text-lg">
+                      Years experience
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
