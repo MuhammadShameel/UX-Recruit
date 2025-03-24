@@ -55,175 +55,25 @@ const Landing = () => {
   return (
     <div>
       {/* Hero Section  */}
-      <section className="container text-white mx-auto px-4 relative">
-        <div className="flex flex-col gap-10 items-center lg:flex-row max-w-7xl mx-auto">
-          {/* Left Side: Text Content */}
-          <div
-            className="text-left lg:mt-20 lg:w-2/3 mt-12"
-            data-aos="fade-up-right"
-          >
-            <h1 className="text-[70px] font-anton font-normal leading-[100%] lg:text-5xl tracking-[-2px] uppercase">
-              A FULL TEAM FOR{" "}
-              <span className="primary-color">
-                THE PRICE OF A SINGLE DESIGNER
-              </span>
-            </h1>
 
-            <Image
-              src={heroShape}
-              width={636}
-              height={50}
-              alt="heroShape Image"
-              className="lg:mt-[-25px] md:mt-[-25px] sm:mt-[-5px]"
-            />
-
-            <div className="grid grid-cols-12 gap-8 lg:mt-32 mt-6">
-              {/* First Column: Paragraph (12 columns on mobile, 8 columns on desktop) */}
-              <div className="col-span-12 flex order-1 items-center lg:col-span-8 lg:order-2">
-                <p className="font-manrope font-semibold lg:leading-[160%]">
-                  Get unlimited UI/UX design services with a simple monthly
-                  subscription. We specialize in helping non-technical founders
-                  bring their ideas to life with stunning, user-focused designs.
-                </p>
-              </div>
-
-              {/* Second Column: Button (12 columns on mobile, 4 columns on desktop) */}
-              <div className="col-span-12 flex order-2 justify-start lg:col-span-3 lg:order-1">
-                <button className="bg-white justify-center rounded-[64px] text-sm font-anton font-normal gap-2 hover:opacity-80 items-center leading-[120%] lg:px-10 lg:py-6 lg:text-[1.25rem] primary-color px-5 py-4 transition">
-                  HIRE NOW
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Side: Image with Overlay */}
-          <div className="hero_base_img lg:w-1/3 relative">
-            {/* Base Image */}
-            <div className="lg:left-7 relative">
-              <Image
-                src={Border}
-                width={395}
-                height={576}
-                alt="Base Image"
-                className="h-[700px] rounded-[32px] w-full lg:h-[576px]"
-              />
-            </div>
-
-            {/* Video */}
-            <div
-              className="h-[68%] rounded-[200px] w-[100%] -translate-x-1/2 -translate-y-1/2 absolute left-1/2 lg:left-[57%] max-h-[576px] max-w-[405px] overflow-hidden top-1/2 transform z-20"
-              style={{
-                background:
-                  "linear-gradient(0deg, rgba(157, 3, 134, 0.12) 0%, rgba(157, 3, 134, 0.12) 100%)",
-              }}
-            >
-              <video
-                className="h-full w-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-              >
-                <source
-                  src="/assets/images/bg-video-hero.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
-            {/* Overlay Image (Larger than Base Image) */}
-            <div className="flex h-full justify-items-center w-full absolute items-center left-0 top-0 z-10">
-              <Image
-                src={Shade}
-                alt="Overlay Image"
-                className="rounded-[32px] overlay_img scale-150"
-              />
-            </div>
-
-            {/* Left Card */}
-            <div className="p-2.5 rounded-lg w-fit -right-5 absolute hero_top_left md:-right-14 top-5 z-20">
-              {/* Avatar Images */}
-              <div className="flex mb-2.5">
-                {avatars.map((avatar, index) => (
-                  <Image
-                    key={index}
-                    src={avatar}
-                    alt="avatar"
-                    className={index !== 0 ? "-ml-6" : ""}
-                    draggable="false"
-                  />
-                ))}
-              </div>
-              {/* Star Images */}
-              <div className="flex mb-1">
-                {stars.map((star, index) => (
-                  <Image key={index} src={star} alt="star" draggable="false" />
-                ))}
-              </div>
-
-              {/* Text */}
-              <div className="text-[18px] text-white capitalize font-medium">
-                100K+ satisfied Customers
-              </div>
-            </div>
-
-            {/* Right Card */}
-            <div className="h-[170px] rounded-lg text-[12px] w-[247px] -left-5 absolute bottom-20 font-manrope font-medium hero_top_left px-5 py-2.5 sm:-left-14 z-20">
-              <div className="text-sm text-white capitalize">
-                Design speed : cost Ratio
-              </div>
-              <div>
-                <div className="text-sm text-white capitalize font-medium mb-1.5">
-                  Us
-                </div>
-                <div className="bg-white h-2 rounded-2xl w-full mb-3 relative">
-                  {/* 70% Progress Bar */}
-                  <div className="bg-[#D68CCB] h-2 rounded-2xl w-[70%] relative z-10"></div>
-
-                  {/* 20% Progress Bar (Overlapping with Gap) */}
-                  <div className="bg-[#6155E1] h-2 rounded-2xl w-[30%] -translate-x-1/2 absolute left-[72%] top-0"></div>
-                </div>
-              </div>
-              <div>
-                <div className="text-sm text-white capitalize font-medium mb-1.5">
-                  Other Agencies
-                </div>
-                <div className="bg-white h-2 rounded-2xl w-full mb-3">
-                  {/* 50% Progress Bar */}
-                  <div className="bg-[#989898] h-2 rounded-2xl w-[50%]"></div>
-                </div>
-              </div>
-              <div>
-                <div className="text-sm text-white capitalize font-medium mb-1.5">
-                  Freelancer
-                </div>
-                <div className="bg-white h-2 rounded-2xl w-full mb-3">
-                  {/* 40% Progress Bar */}
-                  <div className="bg-[#989898] h-2 rounded-2xl w-[40%] mb-3"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <Marquee />
       {/* About Section  */}
       <section className="px-4 overflow-x-hidden">
-        <div className="container mx-auto ">
+        <div className="container mx-auto">
           <hr className="mt-10 secondary-color" />
-          <div className="grid grid-cols-12 gap-8 mt-10 pb-20">
+          <div className="grid grid-cols-12 gap-4 md:gap-8 mt-10 pb-20">
             {/* Left Side: Text Content (5 columns) */}
-            <div className="col-span-12 text-center lg:col-span-7 lg:text-left">
-              <h4 className="font-anton secondary-color">About</h4>
+            <div className="col-span-12 text-center lg:col-span-7 lg:text-left px-2 sm:px-0">
+              <h4 className="font-anton secondary-color text-lg sm:text-xl">
+                About
+              </h4>
               <h2
-                className="font-anton font-normal leading-[110%] uppercase"
+                className="font-anton font-normal leading-[110%] uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
                 style={{ letterSpacing: "-1px" }}
               >
                 Design Products Your Users Will Love Within Your Budget and
                 Timeline
               </h2>
-              <p className="font-manrope font-semibold leading-[160%] mt-[50px]">
+              <p className="font-manrope font-semibold leading-[160%] mt-6 sm:mt-[50px] text-sm sm:text-base">
                 Most design agencies only focus on aesthetics, but great design
                 goes beyond visuals. You need a partner who understands user
                 behavior, brand identity, and the bigger picture. Most
@@ -236,44 +86,52 @@ const Landing = () => {
             <div className="col-span-12 flex justify-center items-center lg:col-span-5 relative">
               {/* Image container */}
               <div className="flex flex-col justify-center w-full items-center mx-auto">
-                <div className="my-10 relative">
-                  <Image src={imgTop} alt="img not found" />
+                <div className="relative my-4 sm:my-6 md:my-10 w-full flex justify-center">
+                  <Image
+                    src={imgTop}
+                    alt="img not found"
+                    className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[80%] lg:max-w-full"
+                  />
                   <Image
                     src={AboutEllipse}
-                    className="absolute translate-y-[-13%] top-[-50%] w-full -z-1"
+                    className="absolute top-[-50%] w-full max-w-[280px] sm:max-w-[350px] md:max-w-[80%] lg:max-w-full z-[-1] translate-y-[-13%]"
                     alt="img not found"
                   />
                 </div>
-                <div className="my-10 relative">
-                  <Image src={imgBottom} alt="img not found" />
+                <div className="relative my-4 sm:my-6 md:my-10 w-full flex justify-center">
+                  <Image
+                    src={imgBottom}
+                    alt="img not found"
+                    className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[80%] lg:max-w-full"
+                  />
                   <Image
                     src={AboutEllipse}
-                    className="absolute translate-y-[-15%] top-[-50%] w-full -z-1"
+                    className="absolute top-[-50%] w-full max-w-[280px] sm:max-w-[350px] md:max-w-[80%] lg:max-w-full z-[-1] translate-y-[-15%]"
                     alt="img not found"
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div className="bg-white rounded-4xl text-black mt-5 px-7 relative">
+          <div className="bg-white rounded-4xl text-black mt-5 px-4 sm:px-7 relative">
             <Image
               src={AboutRoundEllipse}
-              className="absolute top-0 -z-1 translate-y-[-100%]"
+              className="absolute top-0 -z-1 translate-y-[-100%] w-full"
               alt="img not found"
             />
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2">
-              {/* Repeat this block 6 times for 6 cards */}
-              <div className="overflow-hidden py-12">
+            <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-3 md:grid-cols-2">
+              {/* Card 1 */}
+              <div className="overflow-hidden py-8 sm:py-12 px-2 sm:px-4">
                 <Image
                   src={CardImgOne}
                   alt="img not found"
                   className="w-full"
                 />
-                <div className="mt-10">
-                  <h5 className="text-xl font-anton mt-4">
+                <div className="mt-6 sm:mt-10">
+                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     A Dedicated Design Team
                   </h5>
-                  <p className="text-black font-manrope mt-2">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Forget the hassle of hiring and managing multiple designers
                     or freelancers. With us, you get a dedicated team, including
                     a UI/UX Designer, Visual Designer, and a Creative Project
@@ -281,70 +139,78 @@ const Landing = () => {
                   </p>
                 </div>
               </div>
-              <div className="overflow-hidden py-12">
+
+              {/* Card 2 */}
+              <div className="overflow-hidden py-8 sm:py-12 px-2 sm:px-4">
                 <Image
                   src={CardImgTwo}
                   alt="img not found"
                   className="w-full"
                 />
-                <div className="mt-10">
-                  <h5 className="text-xl font-anton mt-4">
+                <div className="mt-6 sm:mt-10">
+                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Real-Time Design Collaboration
                   </h5>
-                  <p className="text-black font-manrope mt-2">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Access a live project dashboard where you can review
                     designs, request unlimited revisions, and communicate
                     directly with your design team. Transparency and
                     collaboration are at the heart of our process.
                   </p>
                 </div>
-              </div>{" "}
-              <div className="overflow-hidden py-12">
+              </div>
+
+              {/* Card 3 */}
+              <div className="overflow-hidden py-8 sm:py-12 px-2 sm:px-4">
                 <Image
                   src={CardImgThree}
                   alt="img not found"
                   className="w-full"
                 />
-                <div className="mt-10">
-                  <h5 className="text-xl font-anton mt-4">
+                <div className="mt-6 sm:mt-10">
+                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Faster Design Cycles
                   </h5>
-                  <p className="text-black font-manrope mt-2">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Our proven design workflows eliminate delays and minimize
                     feedback loops. Experience up to 4x faster project
                     turnarounds compared to traditional design services.
                   </p>
                 </div>
-              </div>{" "}
-              <div className="overflow-hidden py-12">
+              </div>
+
+              {/* Card 4 */}
+              <div className="overflow-hidden py-8 sm:py-12 px-2 sm:px-4">
                 <Image
                   src={CardImgFour}
                   alt="img not found"
                   className="w-full"
                 />
-                <div className="mt-10">
-                  <h5 className="text-xl font-anton mt-4">
+                <div className="mt-6 sm:mt-10">
+                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Weekly Active Design Sprints
                   </h5>
-                  <p className="text-black font-manrope mt-2">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     We approach each week with focused design sprints,
                     delivering prioritized tasks and updates on a weekly basis.
                     This ensures consistent progress and rapid delivery of
                     high-quality designs.
                   </p>
                 </div>
-              </div>{" "}
-              <div className="overflow-hidden py-12">
+              </div>
+
+              {/* Card 5 */}
+              <div className="overflow-hidden py-8 sm:py-12 px-2 sm:px-4">
                 <Image
                   src={CardImgFive}
                   alt="img not found"
                   className="w-full"
                 />
-                <div className="mt-10">
-                  <h5 className="text-xl font-anton mt-4">
+                <div className="mt-6 sm:mt-10">
+                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Unlimited Tasks & Revisions
                   </h5>
-                  <p className="text-black font-manrope mt-2">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Once subscribed, you unlock unlimited design requests.
                     Whether it's creating a mobile app interface, rebranding
                     your website, or designing a complete SaaS dashboard, we've
@@ -352,25 +218,26 @@ const Landing = () => {
                     product aligns perfectly with your vision.
                   </p>
                 </div>
-              </div>{" "}
-              <div className="overflow-hidden py-12">
+              </div>
+
+              {/* Card 6 */}
+              <div className="overflow-hidden py-8 sm:py-12 px-2 sm:px-4">
                 <Image
                   src={CardImgSix}
                   alt="img not found"
                   className="w-full"
                 />
-                <div className="mt-10">
-                  <h5 className="text-xl font-anton mt-4">
-                    We’re Not Just Designers, We’re Your Partners
+                <div className="mt-6 sm:mt-10">
+                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                    We're Not Just Designers, We're Your Partners
                   </h5>
-                  <p className="text-black font-manrope mt-2">
-                    You’re not just another client to us. You’re a partner.
-                    That’s why we offer resources and strategic support to help
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
+                    You're not just another client to us. You're a partner.
+                    That's why we offer resources and strategic support to help
                     you launch and scale your product.
                   </p>
                 </div>
               </div>
-              {/* Repeat the above block 5 more times */}
             </div>
           </div>
         </div>
@@ -391,88 +258,39 @@ const Landing = () => {
         <div className="container mx-auto">
           <hr className="w-full mt-10 mx-auto secondary-color" />
           <h4 className="font-anton mt-12 secondary-color">Projects</h4>
-          <div className="grid grid-cols-12 gap-8 mt-10 pb-20">
-            <div className="col-span-12 flex flex-col items-center lg:col-span-6 lg:items-start">
-              <Image src={CardOne} alt="img not found" />
-              <h4
-                className="font-anton font-normal leading-[110%] mt-10"
-                style={{ letterSpacing: "-1px" }}
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-10 pb-20">
+            {[CardOne, CardTwo, CardThree, CardFour].map((card, index) => (
+              <div
+                key={index}
+                className={`col-span-1 flex flex-col items-center text-center md:items-start md:text-left ${
+                  index % 2 !== 0 ? "md:text-right md:items-end" : ""
+                }`}
               >
-                NOVELIST WEBSITE
-              </h4>
-              <ul className="flex mt-2">
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  IOS
-                </li>
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  SWIFT UI
-                </li>
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  NODE.JS
-                </li>
-              </ul>
-            </div>
-            <div className="col-span-12 flex flex-col text-right items-center lg:col-span-6 lg:items-start">
-              <Image src={CardTwo} alt="img not found" />
-              <h4
-                className="font-anton font-normal leading-[110%] mt-10"
-                style={{ letterSpacing: "-1px" }}
-              >
-                NOVELIST WEBSITE
-              </h4>
-              <ul className="flex justify-end mt-2">
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  IOS
-                </li>
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  SWIFT UI
-                </li>
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  NODE.JS
-                </li>
-              </ul>
-            </div>
-            <div className="col-span-12 flex flex-col items-center lg:col-span-6 lg:items-start lg:mt-20">
-              <Image src={CardThree} alt="img not found" />
-              <h4
-                className="font-anton font-normal leading-[110%] mt-10"
-                style={{ letterSpacing: "-1px" }}
-              >
-                NOVELIST WEBSITE
-              </h4>
-              <ul className="flex mt-2">
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  IOS
-                </li>
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  SWIFT UI
-                </li>
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  NODE.JS
-                </li>
-              </ul>
-            </div>
-            <div className="col-span-12 flex flex-col text-right items-center lg:col-span-6 lg:items-start lg:mt-20">
-              <Image src={CardFour} alt="img not found" />
-              <h4
-                className="font-anton font-normal leading-[110%] mt-10"
-                style={{ letterSpacing: "-1px" }}
-              >
-                NOVELIST WEBSITE
-              </h4>
-              <ul className="flex justify-end mt-2">
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  IOS
-                </li>
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  SWIFT UI
-                </li>
-                <li className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-2.5 secondary-color">
-                  NODE.JS
-                </li>
-              </ul>
-            </div>
+                <Image
+                  src={card}
+                  alt="img not found"
+                  className="w-full h-auto max-w-sm md:max-w-full"
+                />
+                <h4
+                  className="font-anton font-normal leading-[110%] mt-6 md:mt-10"
+                  style={{ letterSpacing: "-1px" }}
+                >
+                  NOVELIST WEBSITE
+                </h4>
+                <ul className="flex flex-wrap justify-center md:justify-start mt-2">
+                  {["IOS", "SWIFT UI", "NODE.JS"].map((tech, i) => (
+                    <li
+                      key={i}
+                      className="font-anton font-normal hover:cursor-pointer leading-[120%] px-2.5 text-gray-600"
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
+
           <button className="flex bg-white justify-center rounded-[64px] text-[1.25rem] font-anton font-normal gap-2 hover:opacity-80 items-center leading-[120%] mx-auto primary-color px-10 py-6 transition">
             VIEW ALL
           </button>
