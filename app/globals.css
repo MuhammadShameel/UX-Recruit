@@ -302,9 +302,7 @@ img {
 
 /* Scrollbar thumb (draggable part) */
 .relative.overflow-x-auto::-webkit-scrollbar-thumb {
-  background: linear-gradient(to right,
-      white,
-      rgba(255, 255, 255, 0.3));
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.3));
   /* White gradient */
   border-radius: 10px;
   /* Rounded corners */
@@ -343,7 +341,10 @@ img {
 
 @media (max-width: 1024px) {
   .hero_base_img {
-    width: 385px;
+    /* width: 385px; */
+    width: 100%;
+    min-width: 250px;
+    max-width: 395px;
   }
 }
 
