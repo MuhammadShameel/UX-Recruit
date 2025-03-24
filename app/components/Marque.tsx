@@ -1,7 +1,7 @@
 "use client";
 import { useRef, useState, MouseEvent } from "react";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 import marqueImg from "../../public/assets/images/marque-image.png";
 
 export default function Marquee() {
@@ -35,10 +35,14 @@ export default function Marquee() {
   const handleMouseLeave = () => setIsDragging(false);
 
   return (
-    <div
+    <motion.div
       className="w-full cursor-grab mt-10 overflow-hidden mb-20 relative"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
+      initial={{ opacity: 0, y: 50 }} // Animation starts from below
+      whileInView={{ opacity: 1, y: 0 }} // Becomes visible on scroll
+      viewport={{ once: true, amount: 0.2 }} // Triggers animation when 20% of it is in view
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div
         ref={marqueeRef}
@@ -52,9 +56,13 @@ export default function Marquee() {
       >
         {/* Marquee items */}
         {[...Array(10)].map((_, i) => (
-          <div
+          <motion.div
             key={i}
-            className="flex-shrink-0  rounded-lg w-40 md:w-64  sm:w-52"
+            className="flex-shrink-0 rounded-lg w-40 sm:w-48 md:w-56 lg:w-64 xl:w-72"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
           >
             <Image
               src={marqueImg}
@@ -63,9 +71,9 @@ export default function Marquee() {
               height={300}
               className="h-full rounded-lg w-full object-cover"
             />
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

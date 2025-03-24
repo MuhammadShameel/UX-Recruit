@@ -48,7 +48,10 @@ const Landing = () => {
       <section className="container text-white mx-auto px-4 relative">
         <div className="flex flex-col gap-10 items-center lg:flex-row max-w-7xl mx-auto">
           {/* Left Side: Text Content */}
-          <div className="text-left lg:mt-20 lg:w-2/3 mt-12">
+          <div
+            className="text-left lg:mt-20 lg:w-2/3 mt-12"
+            data-aos="fade-up-right"
+          >
             <h1 className="text-[70px] font-anton font-normal leading-[100%] lg:text-5xl tracking-[-2px] uppercase">
               A FULL TEAM FOR{" "}
               <span className="primary-color">
@@ -156,7 +159,7 @@ const Landing = () => {
             </div>
 
             {/* Right Card */}
-            <div className="h-[170px] rounded-lg text-[12px] w-[247px] -left-5 absolute bottom-5 font-manrope font-medium hero_top_left px-5 py-2.5 sm:-left-14 z-20">
+            <div className="h-[170px] rounded-lg text-[12px] w-[247px] -left-5 absolute bottom-20 font-manrope font-medium hero_top_left px-5 py-2.5 sm:-left-14 z-20">
               <div className="text-sm text-white capitalize">
                 Design speed : cost Ratio
               </div>
