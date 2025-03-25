@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <>
       <nav>
         <div className="container px-4 mx-auto">
           <div className="flex justify-center items-center lg:justify-between md:justify-between sm:justify-between">
@@ -52,6 +52,6 @@ export const Navbar = () => {
           )}
         </div>
       </nav>
-    </div>
+    </>
   );
 };

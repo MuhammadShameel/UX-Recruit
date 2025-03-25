@@ -53,7 +53,7 @@ const Landing = () => {
   // Array of star images
   const stars = [star, star, star, star, star];
   return (
-    <div>
+    <>
       {/* Hero Section  */}
       <section className=" text-white px-4 relative overflow-x-clip">
         <div className="container  mx-auto">
@@ -78,7 +78,7 @@ const Landing = () => {
                 className="lg:mt-[-25px] md:mt-[-25px] sm:mt-[-5px]"
               />
 
-              <div className="grid grid-cols-12 gap-8 lg:mt-32 mt-6">
+              <div className="grid grid-cols-12 gap-6 xl:gap-8 lg:mt-32 mt-6 items-center">
                 {/* First Column: Paragraph (12 columns on mobile, 8 columns on desktop) */}
                 <div className="col-span-12 flex order-1 items-center lg:col-span-8 lg:order-2">
                   <p className="font-manrope font-semibold lg:leading-[160%]">
@@ -90,8 +90,8 @@ const Landing = () => {
                 </div>
 
                 {/* Second Column: Button (12 columns on mobile, 4 columns on desktop) */}
-                <div className="col-span-12 flex order-2 justify-start lg:col-span-3 lg:order-1">
-                  <button className="bg-white justify-center rounded-[64px] text-sm font-anton font-normal gap-2 hover:opacity-80 items-center leading-[120%] lg:px-10 lg:py-6 lg:text-[1.25rem] primary-color px-5 py-4 transition">
+                <div className="col-span-12 flex order-2 lg:justify-center lg:col-span-4 xl:col-span-3 lg:order-1">
+                  <button className="flex btn btn-primary cursor-pointer font-anton leading-[120%] transition uppercase">
                     HIRE NOW
                   </button>
                 </div>
@@ -1060,7 +1060,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
