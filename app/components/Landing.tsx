@@ -55,7 +55,7 @@ const Landing = () => {
   return (
     <div>
       {/* Hero Section  */}
-      <section className=" text-white px-4 relative overflow-x-hidden">
+      <section className=" text-white px-4 relative overflow-x-clip">
         <div className="container  mx-auto">
           <div className="flex flex-col gap-10 items-center lg:flex-row mx-auto">
             {/* Left Side: Text Content */}
