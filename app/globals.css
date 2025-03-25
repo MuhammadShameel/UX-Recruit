@@ -320,7 +320,7 @@ img {
 }
 
 .hero_base_img {
-  width: 385px;
+  /* width: 385px; */
 }
 
 @media (max-width: 480px) {
