@@ -12,7 +12,7 @@ export const Navbar = () => {
     <>
       <nav>
         <div className="container px-4 mx-auto">
-          <div className="flex justify-center items-center lg:justify-between md:justify-between sm:justify-between">
+          <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex-shrink-0">
               <Image
