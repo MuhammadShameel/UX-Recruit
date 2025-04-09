@@ -78,6 +78,7 @@ const Landing = () => {
                 className="lg:mt-[-25px] md:mt-[-25px] sm:mt-[-5px]"
               />
 
+
               <div className="grid grid-cols-12 gap-6 xl:gap-8 lg:mt-32 mt-6 items-center">
                 {/* First Column: Paragraph (12 columns on mobile, 8 columns on desktop) */}
                 <div className="col-span-12 flex order-1 items-center lg:col-span-8 lg:order-2">
@@ -88,6 +89,28 @@ const Landing = () => {
                     user-focused designs.
                   </p>
                 </div>
+
+            {/* Left Card */}
+            <div className="p-2.5 rounded-lg w-fit lg:-right-5 right-0 sm:-right-5 absolute hero_top_left md:-right-14 top-5 z-20">
+              {/* Avatar Images */}
+              <div className="flex mb-2.5">
+                {avatars.map((avatar, index) => (
+                  <Image
+                    key={index}
+                    src={avatar}
+                    alt="avatar"
+                    className={index !== 0 ? "-ml-6" : ""}
+                    draggable="false"
+                  />
+                ))}
+              </div>
+              {/* Star Images */}
+              <div className="flex mb-1">
+                {stars.map((star, index) => (
+                  <Image key={index} src={star} alt="star" draggable="false" />
+                ))}
+              </div>
+
 
                 {/* Second Column: Button (12 columns on mobile, 4 columns on desktop) */}
                 <div className="col-span-12 flex order-2 lg:justify-center lg:col-span-4 xl:col-span-3 lg:order-1">
