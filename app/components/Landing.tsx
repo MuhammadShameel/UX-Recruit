@@ -40,7 +40,7 @@ import AboutRoundEllipse from "../../public/assets/images/about-round-ellipse.sv
 import NumbersEllipse from "../../public/assets/images/numbers-ellipse.svg";
 
 const Landing = () => {
-  // Array of avatar images     
+  // Array of avatar images
   const avatars = [
     heroTopAvater,
     heroTopAvater,
@@ -55,7 +55,7 @@ const Landing = () => {
   return (
     <div>
       {/* Hero Section  */}
-      <section className="container text-white mx-auto px-4 relative">
+      <section className="container text-white overflow-hidden mx-auto px-4 relative">
         <div className="flex flex-col gap-10 items-center lg:flex-row max-w-7xl mx-auto">
           {/* Left Side: Text Content */}
           <div
