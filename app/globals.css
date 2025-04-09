@@ -124,6 +124,10 @@ h5 {
 /* Responsive font sizes */
 
 @media (max-width: 1279.97px) {
+  .btn {
+    padding: 1.5rem 2.125rem;
+  }
+
   .text-outline {
     font-size: 16rem;
   }
@@ -320,7 +324,7 @@ img {
 }
 
 .hero_base_img {
-  width: 385px;
+  /* width: 385px; */
 }
 
 @media (max-width: 480px) {

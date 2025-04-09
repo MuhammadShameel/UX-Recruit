@@ -53,7 +53,7 @@ const Landing = () => {
   // Array of star images
   const stars = [star, star, star, star, star];
   return (
-    <div>
+    <>
       {/* Hero Section  */}
       <section className="container text-white overflow-hidden mx-auto px-4 relative">
         <div className="flex flex-col gap-10 items-center lg:flex-row max-w-7xl mx-auto">
@@ -108,99 +108,199 @@ const Landing = () => {
                 className="h-[700px] rounded-[32px] w-full lg:h-[576px]"
               />
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Video */}
+      {/* Video */}
+      <section className=" text-white px-4 relative overflow-x-clip">
+        <div className="container  mx-auto">
+          <div className="flex flex-col gap-10 items-center lg:flex-row mx-auto">
+            {/* Left Side: Text Content */}
             <div
-              className="h-[68%] rounded-[200px] w-[100%] -translate-x-1/2 -translate-y-1/2 absolute left-1/2 lg:left-[57%] max-h-[576px] max-w-[405px] overflow-hidden top-1/2 transform z-20"
-              style={{
-                background:
-                  "linear-gradient(0deg, rgba(157, 3, 134, 0.12) 0%, rgba(157, 3, 134, 0.12) 100%)",
-              }}
+              className="text-left lg:mt-20 lg:w-2/3 mt-12"
+              data-aos="fade-up-right"
             >
-              <video
-                className="h-full w-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-              >
-                <source
-                  src="/assets/images/bg-video-hero.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+              <h1 className="text-[70px] font-anton font-normal leading-[100%] lg:text-5xl tracking-[-2px] uppercase">
+                A FULL TEAM FOR{" "}
+                <span className="primary-color">
+                  THE PRICE OF A SINGLE DESIGNER
+                </span>
+              </h1>
 
-            {/* Overlay Image (Larger than Base Image) */}
-            <div className="flex h-full justify-items-center w-full absolute items-center left-0 top-0 z-10">
               <Image
-                src={Shade}
-                alt="Overlay Image"
-                className="rounded-[32px] overlay_img scale-150"
+                src={heroShape}
+                width={636}
+                height={50}
+                alt="heroShape Image"
+                className="lg:mt-[-25px] md:mt-[-25px] sm:mt-[-5px]"
               />
-            </div>
 
-            {/* Left Card */}
-            <div className="p-2.5 rounded-lg w-fit lg:-right-5 right-0 sm:-right-5 absolute hero_top_left md:-right-14 top-5 z-20">
-              {/* Avatar Images */}
-              <div className="flex mb-2.5">
-                {avatars.map((avatar, index) => (
-                  <Image
-                    key={index}
-                    src={avatar}
-                    alt="avatar"
-                    className={index !== 0 ? "-ml-6" : ""}
-                    draggable="false"
-                  />
-                ))}
-              </div>
-              {/* Star Images */}
-              <div className="flex mb-1">
-                {stars.map((star, index) => (
-                  <Image key={index} src={star} alt="star" draggable="false" />
-                ))}
+              <div className="grid grid-cols-12 gap-6 xl:gap-8 lg:mt-32 mt-6 items-center">
+                {/* First Column: Paragraph (12 columns on mobile, 8 columns on desktop) */}
+                <div className="col-span-12 flex order-1 items-center lg:col-span-8 lg:order-2">
+                  <p className="font-manrope font-semibold lg:leading-[160%]">
+                    Get unlimited UI/UX design services with a simple monthly
+                    subscription. We specialize in helping non-technical
+                    founders bring their ideas to life with stunning,
+                    user-focused designs.
+                  </p>
+                </div>
+
+                {/* Left Card */}
+                <div className="p-2.5 rounded-lg w-fit lg:-right-5 right-0 sm:-right-5 absolute hero_top_left md:-right-14 top-5 z-20">
+                  {/* Avatar Images */}
+                  <div className="flex mb-2.5">
+                    {avatars.map((avatar, index) => (
+                      <Image
+                        key={index}
+                        src={avatar}
+                        alt="avatar"
+                        className={index !== 0 ? "-ml-6" : ""}
+                        draggable="false"
+                      />
+                    ))}
+                  </div>
+                  {/* Star Images */}
+                  <div className="flex mb-1">
+                    {stars.map((star, index) => (
+                      <Image
+                        key={index}
+                        src={star}
+                        alt="star"
+                        draggable="false"
+                      />
+                    ))}
+                  </div>
+
+                  {/* Second Column: Button (12 columns on mobile, 4 columns on desktop) */}
+                  <div className="col-span-12 flex order-2 lg:justify-center lg:col-span-4 xl:col-span-3 lg:order-1">
+                    <button className="flex btn btn-primary cursor-pointer font-anton leading-[120%] transition uppercase">
+                      HIRE NOW
+                    </button>
+                  </div>
+                </div>
               </div>
 
-              {/* Text */}
-              <div className="text-[18px] text-white capitalize font-medium">
-                100K+ satisfied Customers
-              </div>
-            </div>
+              {/* Right Side: Image with Overlay */}
+              <div className="hero_base_img lg:w-1/3">
+                <div className="w-fit relative">
+                  {/* Base Image */}
+                  <div className="relative">
+                    <Image
+                      src={Border}
+                      width={395}
+                      height={576}
+                      alt="Base Image"
+                      className="h-[700px] rounded-[32px] w-full lg:h-[576px]"
+                    />
+                  </div>
 
-            {/* Right Card */}
-            <div className="h-[170px] rounded-lg text-[12px] w-[247px] -left-5 absolute bottom-20 font-manrope font-medium hero_top_left px-5 py-2.5 sm:-left-14 z-20">
-              <div className="text-sm text-white capitalize">
-                Design speed : cost Ratio
-              </div>
-              <div>
-                <div className="text-sm text-white capitalize font-medium mb-1.5">
-                  Us
-                </div>
-                <div className="bg-white h-2 rounded-2xl w-full mb-3 relative">
-                  {/* 70% Progress Bar */}
-                  <div className="bg-[#D68CCB] h-2 rounded-2xl w-[70%] relative z-10"></div>
+                  {/* Video */}
+                  <div
+                    className="h-[68%] rounded-[200px] w-[100%] -translate-y-1/2 absolute  max-h-[576px] max-w-[405px] overflow-hidden top-1/2 transform z-20"
+                    style={{
+                      background:
+                        "linear-gradient(0deg, rgba(157, 3, 134, 0.12) 0%, rgba(157, 3, 134, 0.12) 100%)",
+                    }}
+                  >
+                    <video
+                      className="h-full w-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    >
+                      <source
+                        src="/assets/images/bg-video-hero.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
 
-                  {/* 20% Progress Bar (Overlapping with Gap) */}
-                  <div className="bg-[#6155E1] h-2 rounded-2xl w-[30%] -translate-x-1/2 absolute left-[72%] top-0"></div>
-                </div>
-              </div>
-              <div>
-                <div className="text-sm text-white capitalize font-medium mb-1.5">
-                  Other Agencies
-                </div>
-                <div className="bg-white h-2 rounded-2xl w-full mb-3">
-                  {/* 50% Progress Bar */}
-                  <div className="bg-[#989898] h-2 rounded-2xl w-[50%]"></div>
-                </div>
-              </div>
-              <div>
-                <div className="text-sm text-white capitalize font-medium mb-1.5">
-                  Freelancer
-                </div>
-                <div className="bg-white h-2 rounded-2xl w-full mb-3">
-                  {/* 40% Progress Bar */}
-                  <div className="bg-[#989898] h-2 rounded-2xl w-[40%] mb-3"></div>
+                  {/* Overlay Image (Larger than Base Image) */}
+                  <div className="flex h-full justify-items-center w-full absolute items-center left-0 top-0 z-10">
+                    <Image
+                      src={Shade}
+                      alt="Overlay Image"
+                      className="rounded-[32px] overlay_img scale-150"
+                    />
+                  </div>
+
+                  {/* Left Card */}
+                  <div className="p-2.5 rounded-lg w-fit -right-5 absolute hero_top_left lg:-right-2 xl:-right-14 top-5 z-20">
+                    {/* Avatar Images */}
+                    <div className="flex mb-2.5">
+                      {avatars.map((avatar, index) => (
+                        <div
+                          className={`image-wrapper w-[50px] h-[50px] ${
+                            index !== 0 ? "-ml-7" : ""
+                          }`}
+                        >
+                          <Image
+                            key={index}
+                            src={avatar}
+                            alt="avatar"
+                            draggable="false"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                    {/* Star Images */}
+                    <div className="flex mb-1">
+                      {stars.map((star, index) => (
+                        <Image
+                          key={index}
+                          src={star}
+                          alt="star"
+                          draggable="false"
+                        />
+                      ))}
+                    </div>
+
+                    {/* Text */}
+                    <div className="text-[15px] text-white capitalize font-medium tracking-[-0.45px]">
+                      100K+ satisfied Customers
+                    </div>
+                  </div>
+
+                  {/* Right Card */}
+                  <div className="rounded-lg text-[12px] w-[247px] -left-5 absolute bottom-5 sm:bottom-20 font-manrope font-medium hero_top_left px-5 py-2.5 sm:-left-14 z-20">
+                    <div className="text-xs text-white capitalize">
+                      Design speed : cost Ratio
+                    </div>
+                    <div className="mt-4">
+                      <div className="text-xs text-white capitalize font-medium mb-1.5">
+                        Us
+                      </div>
+                      <div className="bg-white h-2 rounded-2xl w-full mb-3 relative">
+                        {/* 70% Progress Bar */}
+                        <div className="bg-[#D68CCB] h-2 rounded-2xl w-[70%] relative z-10"></div>
+
+                        {/* 20% Progress Bar (Overlapping with Gap) */}
+                        <div className="bg-[#6155E1] h-2 rounded-2xl w-[30%] -translate-x-1/2 absolute left-[72%] top-0"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-sm text-white capitalize font-medium mb-1.5">
+                        Other Agencies
+                      </div>
+                      <div className="bg-white h-2 rounded-2xl w-full mb-3">
+                        {/* 50% Progress Bar */}
+                        <div className="bg-[#989898] h-2 rounded-2xl w-[50%]"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-sm text-white capitalize font-medium mb-1.5">
+                        Freelancer
+                      </div>
+                      <div className="bg-white h-2 rounded-2xl w-full mb-3">
+                        {/* 40% Progress Bar */}
+                        <div className="bg-[#989898] h-2 rounded-2xl w-[40%] mb-3"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1045,7 +1145,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
