@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
 
       <footer className="mt-28">
-        <div className="w-full max-w-screen-xl mx-auto">
+        <div className="w-full mx-auto">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
               <Image

@@ -1,0 +1,10 @@
+.project-section .pagination-btn {
+  width: 56px;
+  height: 56px;
+  background: #ffffff1a;
+}
+
+.project-section .pagination-btn.active,
+.project-section .pagination-btn:hover {
+  background: #6155E1;
+}
