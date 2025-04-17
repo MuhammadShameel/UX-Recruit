@@ -46,6 +46,9 @@ export const Navbar = () => {
                 <Link href="/projects" className="block">
                   Projects
                 </Link>
+                <Link href="/contact" className="block">
+                  Contact Us
+                </Link>
                 <Link href="/blogs" className="block">
                   Blogs
                 </Link>
