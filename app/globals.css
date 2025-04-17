@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
 
-
 body {
   /* Base font sizes */
   font-size: 1rem;
@@ -347,3 +346,10 @@ img {
 .animate-marquee {
   animation: marquee 10s linear infinite;
 }
+
+.contact-input {
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #62606f;
+}
+
