@@ -97,6 +97,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
       <section className="px-4 overflow-x-hidden">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 lg:items-center gap-4 md:gap-8 mt-10 pb-20">
@@ -271,101 +272,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
-      {/* Projects Section  */}
-      {/* <section className="px-4 relative pt-16 md:pt-30 project-section">
-        <Image
-          src={ProjectsEllipse}
-          className="absolute right-0 top-0 translate-y-[-50%] -z-1"
-          alt="img not found"
-        />
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 md:gap-y-22 mt-10 pb-20">
-            {[CardOne, CardTwo, CardThree, CardFour].map((card, index) => (
-              <div
-                key={index}
-                className={`col-span-1 flex flex-col items-center text-center md:items-start md:text-left ${
-                  index % 2 !== 0 ? "md:text-right md:items-end" : ""
-                }`}
-              >
-                <Image
-                  src={card}
-                  alt="img not found"
-                  className="w-full h-auto max-w-sm md:max-w-full"
-                />
-                <h4
-                  className="font-anton font-normal leading-[110%] mt-6 md:mt-10"
-                  style={{ letterSpacing: "-1px" }}
-                >
-                  NOVELIST WEBSITE
-                </h4>
-                <ul className="flex flex-wrap justify-center md:justify-start mt-2">
-                  {["IOS", "SWIFT UI", "NODE.JS"].map((tech, i) => (
-                    <li
-                      key={i}
-                      className="font-anton font-normal hover:cursor-pointer leading-[120%] px-2.5 text-gray-600"
-                    >
-                      {tech}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          <div className="flex justify-center">
-            <div className="pagination flex items-center gap-3">
-              <button className="pagination-btn active  rounded-full flex justify-center items-center font-anton text-2xl cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M7.8284 13.0001L13.1924 18.3641L11.7782 19.7783L4 12.0001L11.7782 4.222L13.1924 5.6362L7.8284 11.0001L20 11.0001V13.0001L7.8284 13.0001Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-
-              <button className="pagination-btn  rounded-full flex justify-center items-center font-anton text-2xl cursor-pointer">
-                1
-              </button>
-
-              <button className="pagination-btn  rounded-full flex justify-center items-center font-anton text-2xl cursor-pointer">
-                2
-              </button>
-
-              <button className="pagination-btn  rounded-full flex justify-center items-center font-anton text-2xl cursor-pointer">
-                3
-              </button>
-
-              <button className="pagination-btn  rounded-full flex justify-center items-center font-anton text-2xl cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <Image
-          src={ProjectsEllipseTwo}
-          className="absolute left-0 bottom-[-50%] -z-1"
-          alt="img not found"
-        />
-      </section> */}
     </>
   );
 };
