@@ -1,16 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import { Check, X } from "lucide-react";
-import "../styles/projects.css";
+import "../../styles/projects.css";
 
-import heroShape from "../../public/assets/images/heroShape.svg";
+import heroShape from "../../../public/assets/images/heroShape.svg";
 
-import ProjectsEllipse from "../../public/assets/images/projects-ellipse.svg";
-import ProjectsEllipseTwo from "../../public/assets/images/project-ellipse-two.svg";
-import CardOne from "../../public/assets/images/projects-card-one.png";
-import CardTwo from "../../public/assets/images/projects-card-two.png";
-import CardThree from "../../public/assets/images/projects-card-four.png";
-import CardFour from "../../public/assets/images/projects-card-three.png";
+import ProjectsEllipse from "../../../public/assets/images/projects-ellipse.svg";
+import ProjectsEllipseTwo from "../../../public/assets/images/project-ellipse-two.svg";
+import CardOne from "../../../public/assets/images/projects-card-one.png";
+import CardTwo from "../../../public/assets/images/projects-card-two.png";
+import CardThree from "../../../public/assets/images/projects-card-four.png";
+import CardFour from "../../../public/assets/images/projects-card-three.png";
 
 const Projects = () => {
   return (

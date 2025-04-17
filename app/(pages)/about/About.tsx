@@ -1,27 +1,47 @@
 import React from "react";
 import Image from "next/image";
 import { Check, X } from "lucide-react";
-import "../styles/projects.css";
+import "../../styles/projects.css";
 
-import heroShape from "../../public/assets/images/heroShape.svg";
+import Border from "../../../public/assets/images/hero-border.png";
+import Shade from "../../../public/assets/images/hero-shade.png";
+import heroTopAvater from "../../../public/assets/images/hero-top-avatar-1.svg";
+import star from "../../../public/assets/images/star.svg";
+import heroShape from "../../../public/assets/images/heroShape.svg";
+import ServiceSvg from "../../../public/assets/images/service_svg.svg";
 
-import imgTop from "../../public/assets/images/Img-Sect-Top.png";
-import imgBottom from "../../public/assets/images/Img-Sect-Bottom.png";
-import CardImgOne from "../../public/assets/images/image-card-1.png";
-import CardImgTwo from "../../public/assets/images/image-card-2.png";
-import CardImgThree from "../../public/assets/images/image-card-3.png";
-import CardImgFour from "../../public/assets/images/image-card-4.png";
-import CardImgFive from "../../public/assets/images/image-card-5.png";
-import CardImgSix from "../../public/assets/images/image-card-6.png";
+import imgTop from "../../../public/assets/images/Img-Sect-Top.png";
+import imgBottom from "../../../public/assets/images/Img-Sect-Bottom.png";
+import CardImgOne from "../../../public/assets/images/image-card-1.png";
+import CardImgTwo from "../../../public/assets/images/image-card-2.png";
+import CardImgThree from "../../../public/assets/images/image-card-3.png";
+import CardImgFour from "../../../public/assets/images/image-card-4.png";
+import CardImgFive from "../../../public/assets/images/image-card-5.png";
+import CardImgSix from "../../../public/assets/images/image-card-6.png";
 
-import AboutEllipse from "../../public/assets/images/about_ellipse.svg";
-import AboutRoundEllipse from "../../public/assets/images/about-round-ellipse.svg";
+import ProjectsLine from "../../../public/assets/images/projects-line.svg";
+import ProjectsEllipse from "../../../public/assets/images/projects-ellipse.svg";
+import ProjectsEllipseTwo from "../../../public/assets/images/project-ellipse-two.svg";
+import CardOne from "../../../public/assets/images/projects-card-one.png";
+import CardTwo from "../../../public/assets/images/projects-card-two.png";
+import CardThree from "../../../public/assets/images/projects-card-four.png";
+import CardFour from "../../../public/assets/images/projects-card-three.png";
 
-import NumbersEllipse from "../../public/assets/images/numbers-ellipse.svg";
+import ProcessEllipse from "../../../public/assets/images/process-ellipse.svg";
+import discoveryIcon from "../../../public/assets/images/book-discovery-icon.png";
+import designIcon from "../../../public/assets/images/add-design-icon.png";
+import createIcon from "../../../public/assets/images/create-design-icon.png";
+import requestIcon from "../../../public/assets/images/request-revision-icon.png";
+import trackIcon from "../../../public/assets/images/track-manage-icon.png";
 
-// import ProjectsEllipse from "../../public/assets/images/projects-ellipse.svg
+import AboutEllipse from "../../../public/assets/images/about_ellipse.svg";
+import AboutRoundEllipse from "../../../public/assets/images/about-round-ellipse.svg";
 
-const Blogs = () => {
+import NumbersEllipse from "../../../public/assets/images/numbers-ellipse.svg";
+
+// import ProjectsEllipse from "../../../public/assets/images/projects-ellipse.svg
+
+const AboutUs = () => {
   return (
     <>
       {/* Hero Section  */}
@@ -36,7 +56,7 @@ const Blogs = () => {
               <div className="flex flex-col justify-center h-full">
                 <div className="w-fit">
                   <h1 className="primary-color text-[70px] font-anton font-normal leading-[100%] lg:text-5xl tracking-[-2px] uppercase">
-                    OUR BLOG
+                    ABOUT US
                   </h1>
 
                   <Image
@@ -70,7 +90,7 @@ const Blogs = () => {
             <div className="lg:w-1/2">
               <div>
                 <h2 className="text-outline font-anton font-normal leading-[100%] tracking-[-0.25rem] uppercase mt-[-25px] relative -z-1">
-                  OUR BLOG
+                  ABOUT US
                 </h2>
               </div>
             </div>
@@ -79,7 +99,50 @@ const Blogs = () => {
       </section>
       <section className="px-4 overflow-x-hidden">
         <div className="container mx-auto">
-          <div className=" rounded-4xl text-white mt-5 px-4 sm:px-7 relative">
+          <div className="grid grid-cols-12 lg:items-center gap-4 md:gap-8 mt-10 pb-20">
+            <div className="col-span-12 text-left lg:col-span-8 xl:col-span-7  px-2 sm:px-0">
+              <h4 className="font-anton secondary-color text-lg sm:text-xl">
+                About
+              </h4>
+              <h2
+                className="font-anton font-normal leading-[110%] uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+                style={{ letterSpacing: "-1px" }}
+              >
+                Design Products Your Users Will Love Within Your Budget and
+                Timeline
+              </h2>
+              <p className="font-manrope font-semibold leading-[160%] mt-6 sm:mt-[50px] text-sm sm:text-base">
+                Most design agencies only focus on aesthetics, but great design
+                goes beyond visuals. You need a partner who understands user
+                behavior, brand identity, and the bigger picture. Most
+                importantly, you need a team that shares your vision and cares
+                about your product as much as you do.
+              </p>
+            </div>
+            <div className="col-span-12  lg:col-span-4 xl:col-span-5 flex justify-stretch lg:justify-end">
+              <div className="flex flex-row w-full md:w-auto lg:flex-col justify-between md:justify-start sm:gap-12 md:gap-16 ">
+                <div className="flex flex-col">
+                  <h2 className="font-anton leading-[110%]">200+</h2>
+                  <p className="text-[#62606F] text-xs lg:text-lg">
+                    Projects completed
+                  </p>
+                </div>
+                <div className="flex flex-col">
+                  <h2 className="font-anton leading-[110%]">20+</h2>
+                  <p className="text-[#62606F] text-xs lg:text-lg">
+                    Rework customers
+                  </p>
+                </div>
+                <div className="flex flex-col">
+                  <h2 className="font-anton leading-[110%]">5+</h2>
+                  <p className="text-[#62606F] text-xs lg:text-lg">
+                    Years experience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-4xl text-black mt-5 px-4 sm:px-7 relative">
             <Image
               src={AboutRoundEllipse}
               className="absolute top-0 -z-1 translate-y-[-100%] w-full"
@@ -97,7 +160,7 @@ const Blogs = () => {
                   <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     A Dedicated Design Team
                   </h5>
-                  <p className="text-white font-manrope mt-2 text-sm sm:text-base">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Forget the hassle of hiring and managing multiple designers
                     or freelancers. With us, you get a dedicated team, including
                     a UI/UX Designer, Visual Designer, and a Creative Project
@@ -117,7 +180,7 @@ const Blogs = () => {
                   <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Real-Time Design Collaboration
                   </h5>
-                  <p className="text-white font-manrope mt-2 text-sm sm:text-base">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Access a live project dashboard where you can review
                     designs, request unlimited revisions, and communicate
                     directly with your design team. Transparency and
@@ -137,7 +200,7 @@ const Blogs = () => {
                   <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Faster Design Cycles
                   </h5>
-                  <p className="text-white font-manrope mt-2 text-sm sm:text-base">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Our proven design workflows eliminate delays and minimize
                     feedback loops. Experience up to 4x faster project
                     turnarounds compared to traditional design services.
@@ -156,7 +219,7 @@ const Blogs = () => {
                   <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Weekly Active Design Sprints
                   </h5>
-                  <p className="text-white font-manrope mt-2 text-sm sm:text-base">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     We approach each week with focused design sprints,
                     delivering prioritized tasks and updates on a weekly basis.
                     This ensures consistent progress and rapid delivery of
@@ -176,7 +239,7 @@ const Blogs = () => {
                   <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Unlimited Tasks & Revisions
                   </h5>
-                  <p className="text-white font-manrope mt-2 text-sm sm:text-base">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Once subscribed, you unlock unlimited design requests.
                     Whether it's creating a mobile app interface, rebranding
                     your website, or designing a complete SaaS dashboard, we've
@@ -197,68 +260,10 @@ const Blogs = () => {
                   <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     We're Not Just Designers, We're Your Partners
                   </h5>
-                  <p className="text-white font-manrope mt-2 text-sm sm:text-base">
+                  <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     You're not just another client to us. You're a partner.
                     That's why we offer resources and strategic support to help
                     you launch and scale your product.
-                  </p>
-                </div>
-              </div>
-              {/* Card 7 */}
-              <div className="overflow-hidden py-8 sm:py-12 px-2 sm:px-4">
-                <Image
-                  src={CardImgOne}
-                  alt="img not found"
-                  className="w-full"
-                />
-                <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
-                    A Dedicated Design Team
-                  </h5>
-                  <p className="text-white font-manrope mt-2 text-sm sm:text-base">
-                    Forget the hassle of hiring and managing multiple designers
-                    or freelancers. With us, you get a dedicated team, including
-                    a UI/UX Designer, Visual Designer, and a Creative Project
-                    Manager, all for the price of a single hire.
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 8 */}
-              <div className="overflow-hidden py-8 sm:py-12 px-2 sm:px-4">
-                <Image
-                  src={CardImgTwo}
-                  alt="img not found"
-                  className="w-full"
-                />
-                <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
-                    Real-Time Design Collaboration
-                  </h5>
-                  <p className="text-white font-manrope mt-2 text-sm sm:text-base">
-                    Access a live project dashboard where you can review
-                    designs, request unlimited revisions, and communicate
-                    directly with your design team. Transparency and
-                    collaboration are at the heart of our process.
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 9 */}
-              <div className="overflow-hidden py-8 sm:py-12 px-2 sm:px-4">
-                <Image
-                  src={CardImgThree}
-                  alt="img not found"
-                  className="w-full"
-                />
-                <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
-                    Faster Design Cycles
-                  </h5>
-                  <p className="text-white font-manrope mt-2 text-sm sm:text-base">
-                    Our proven design workflows eliminate delays and minimize
-                    feedback loops. Experience up to 4x faster project
-                    turnarounds compared to traditional design services.
                   </p>
                 </div>
               </div>
@@ -266,11 +271,48 @@ const Blogs = () => {
           </div>
         </div>
       </section>
-      {/* Hero Section  */}
 
       {/* Projects Section  */}
-      <section className="px-4 relative pt-16 md:pt-30 project-section">
+      {/* <section className="px-4 relative pt-16 md:pt-30 project-section">
+        <Image
+          src={ProjectsEllipse}
+          className="absolute right-0 top-0 translate-y-[-50%] -z-1"
+          alt="img not found"
+        />
         <div className="container mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 md:gap-y-22 mt-10 pb-20">
+            {[CardOne, CardTwo, CardThree, CardFour].map((card, index) => (
+              <div
+                key={index}
+                className={`col-span-1 flex flex-col items-center text-center md:items-start md:text-left ${
+                  index % 2 !== 0 ? "md:text-right md:items-end" : ""
+                }`}
+              >
+                <Image
+                  src={card}
+                  alt="img not found"
+                  className="w-full h-auto max-w-sm md:max-w-full"
+                />
+                <h4
+                  className="font-anton font-normal leading-[110%] mt-6 md:mt-10"
+                  style={{ letterSpacing: "-1px" }}
+                >
+                  NOVELIST WEBSITE
+                </h4>
+                <ul className="flex flex-wrap justify-center md:justify-start mt-2">
+                  {["IOS", "SWIFT UI", "NODE.JS"].map((tech, i) => (
+                    <li
+                      key={i}
+                      className="font-anton font-normal hover:cursor-pointer leading-[120%] px-2.5 text-gray-600"
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
           <div className="flex justify-center">
             <div className="pagination flex items-center gap-3">
               <button className="pagination-btn active  rounded-full flex justify-center items-center font-anton text-2xl cursor-pointer">
@@ -317,9 +359,15 @@ const Blogs = () => {
             </div>
           </div>
         </div>
-      </section>
+
+        <Image
+          src={ProjectsEllipseTwo}
+          className="absolute left-0 bottom-[-50%] -z-1"
+          alt="img not found"
+        />
+      </section> */}
     </>
   );
 };
 
-export default Blogs;
+export default AboutUs;

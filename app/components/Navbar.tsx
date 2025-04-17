@@ -1,9 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-
 import Logo from "../../public/assets/images/logo.png";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +35,7 @@ export const Navbar = () => {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div>
+            <div className="mt-4">
               <div className="pb-3 pt-2 px-2 sm:px-3 space-y-1">
                 <Link href="/" className="block">
                   Home
@@ -44,8 +43,11 @@ export const Navbar = () => {
                 <Link href="/about" className="block">
                   About
                 </Link>
-                <Link href="/contact" className="block">
-                  Contact Us
+                <Link href="/projects" className="block">
+                  Projects
+                </Link>
+                <Link href="/blogs" className="block">
+                  Blogs
                 </Link>
               </div>
             </div>
