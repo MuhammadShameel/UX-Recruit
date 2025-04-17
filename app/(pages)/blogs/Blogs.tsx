@@ -14,7 +14,6 @@ import CardImgFive from "../../../public/assets/images/image-card-5.png";
 import CardImgSix from "../../../public/assets/images/image-card-6.png";
 
 import AboutEllipse from "../../../public/assets/images/about_ellipse.svg";
-import AboutRoundEllipse from "../../../public/assets/images/about-round-ellipse.svg";
 
 import NumbersEllipse from "../../../public/assets/images/numbers-ellipse.svg";
 
@@ -79,11 +78,6 @@ const Blogs = () => {
       <section className="px-4 overflow-x-hidden">
         <div className="container mx-auto">
           <div className=" rounded-4xl text-white mt-5 px-4 sm:px-7 relative">
-            <Image
-              src={AboutRoundEllipse}
-              className="absolute top-0 -z-1 translate-y-[-100%] w-full"
-              alt="img not found"
-            />
             <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-3 md:grid-cols-2">
               {/* Card 1 */}
               <div className="overflow-hidden py-8 sm:py-12 px-2 sm:px-4">
