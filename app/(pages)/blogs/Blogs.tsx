@@ -1,23 +1,16 @@
 import React from "react";
 import Image from "next/image";
+
 import "../../styles/projects.css";
 
 import heroShape from "../../../public/assets/images/heroShape.svg";
 
-import imgTop from "../../../public/assets/images/Img-Sect-Top.png";
-import imgBottom from "../../../public/assets/images/Img-Sect-Bottom.png";
 import CardImgOne from "../../../public/assets/images/image-card-1.png";
 import CardImgTwo from "../../../public/assets/images/image-card-2.png";
 import CardImgThree from "../../../public/assets/images/image-card-3.png";
 import CardImgFour from "../../../public/assets/images/image-card-4.png";
 import CardImgFive from "../../../public/assets/images/image-card-5.png";
 import CardImgSix from "../../../public/assets/images/image-card-6.png";
-
-import AboutEllipse from "../../../public/assets/images/about_ellipse.svg";
-
-import NumbersEllipse from "../../../public/assets/images/numbers-ellipse.svg";
-
-// import ProjectsEllipse from "../../../public/assets/images/projects-ellipse.svg
 
 const Blogs = () => {
   return (
