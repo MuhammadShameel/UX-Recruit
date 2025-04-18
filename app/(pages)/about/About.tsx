@@ -1,14 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { Check, X } from "lucide-react";
 import "../../styles/projects.css";
 
-import Border from "../../../public/assets/images/hero-border.png";
-import Shade from "../../../public/assets/images/hero-shade.png";
-import heroTopAvater from "../../../public/assets/images/hero-top-avatar-1.svg";
-import star from "../../../public/assets/images/star.svg";
 import heroShape from "../../../public/assets/images/heroShape.svg";
-import ServiceSvg from "../../../public/assets/images/service_svg.svg";
 
 import imgTop from "../../../public/assets/images/Img-Sect-Top.png";
 import imgBottom from "../../../public/assets/images/Img-Sect-Bottom.png";
@@ -19,27 +13,7 @@ import CardImgFour from "../../../public/assets/images/image-card-4.png";
 import CardImgFive from "../../../public/assets/images/image-card-5.png";
 import CardImgSix from "../../../public/assets/images/image-card-6.png";
 
-import ProjectsLine from "../../../public/assets/images/projects-line.svg";
-import ProjectsEllipse from "../../../public/assets/images/projects-ellipse.svg";
-import ProjectsEllipseTwo from "../../../public/assets/images/project-ellipse-two.svg";
-import CardOne from "../../../public/assets/images/projects-card-one.png";
-import CardTwo from "../../../public/assets/images/projects-card-two.png";
-import CardThree from "../../../public/assets/images/projects-card-four.png";
-import CardFour from "../../../public/assets/images/projects-card-three.png";
-
-import ProcessEllipse from "../../../public/assets/images/process-ellipse.svg";
-import discoveryIcon from "../../../public/assets/images/book-discovery-icon.png";
-import designIcon from "../../../public/assets/images/add-design-icon.png";
-import createIcon from "../../../public/assets/images/create-design-icon.png";
-import requestIcon from "../../../public/assets/images/request-revision-icon.png";
-import trackIcon from "../../../public/assets/images/track-manage-icon.png";
-
-import AboutEllipse from "../../../public/assets/images/about_ellipse.svg";
 import AboutRoundEllipse from "../../../public/assets/images/about-round-ellipse.svg";
-
-import NumbersEllipse from "../../../public/assets/images/numbers-ellipse.svg";
-
-// import ProjectsEllipse from "../../../public/assets/images/projects-ellipse.svg
 
 const AboutUs = () => {
   return (
