@@ -6,10 +6,12 @@ import "flowbite";
 import heroShape from "../../../public/assets/images/heroShape.svg";
 import Image from "next/image";
 
-const Service = () => {
-  const [openAccordion, setOpenAccordion] = useState(null);
+type AccordionID = 1 | 2 | 3;
 
-  const toggleAccordion = (id: any) => {
+const Service = () => {
+  const [openAccordion, setOpenAccordion] = useState<AccordionID | null>(null);
+
+  const toggleAccordion = (id: AccordionID) => {
     setOpenAccordion(openAccordion === id ? null : id);
   };
   useEffect(() => {

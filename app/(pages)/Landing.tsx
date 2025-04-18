@@ -142,6 +142,7 @@ const Landing = () => {
                   <div className="flex mb-2.5">
                     {avatars.map((avatar, index) => (
                       <div
+                        key={index}
                         className={`image-wrapper w-[50px] h-[50px] ${
                           index !== 0 ? "-ml-7" : ""
                         }`}
