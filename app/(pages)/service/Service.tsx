@@ -1,12 +1,17 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "flowbite";
 
 import heroShape from "../../../public/assets/images/heroShape.svg";
 import Image from "next/image";
 
 const Service = () => {
+  const [openAccordion, setOpenAccordion] = useState(null);
+
+  const toggleAccordion = (id: any) => {
+    setOpenAccordion(openAccordion === id ? null : id);
+  };
   useEffect(() => {
     // Flowbite auto-inits on load
   }, []);
@@ -90,211 +95,186 @@ const Service = () => {
             </div>
           </div>
           <div>
-            <div className="p-8">
-              <div id="accordion-collapse" data-accordion="collapse">
-                <h2 id="heading">
+            <div
+              id="accordion-collapse"
+              className="flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12"
+            >
+              <div className="accordion">
+                <h5 className="font-anton   text-white">
                   <button
                     type="button"
-                    className="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0"
-                    data-accordion-target="#body"
-                    aria-expanded="false"
-                    aria-controls="body"
+                    className="flex items-center w-full justify-start gap-2 sm:gap-8 xl:gap-12 transition cursor-pointer py-2.5"
+                    onClick={() => toggleAccordion(1)}
+                    aria-expanded={openAccordion === 1}
+                    aria-controls="accordion-collapse-body-1"
                   >
-                    <span>What is Flowbite?</span>
-                    <svg className="w-3 h-3" viewBox="0 0 10 6">
-                      <path
-                        d="M9 5 5 1 1 5"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                      />
-                    </svg>
+                    <span className="w-[10%] text-left">01</span>
+                    <span className="flex-1/2 text-left">UI/UX Design</span>
+                    <div className="w-[15%] sm:w-[10%] lg:w-[5%]">
+                      <div
+                        className={`pagination-btn rounded-full flex justify-center items-center justify-self-end font-anton text-2xl cursor-pointer ${
+                          openAccordion === 1 ? "active" : ""
+                        }`}
+                      >
+                        <svg
+                          className={`transition-transform duration-200 ${
+                            openAccordion === 1 ? "rotate-180" : ""
+                          }`}
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M13.0008 16.1716L18.3648 10.8076L19.779 12.2218L12.0008 20L4.22266 12.2218L5.63688 10.8076L11.0008 16.1716V4H13.0008V16.1716Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </button>
-                </h2>
-                <div id="body" className="hidden" aria-labelledby="heading">
-                  <div className="p-5 border border-b-0">
-                    <p>
-                      Flowbite is a component library built on Tailwind CSS.
-                    </p>
+                </h5>
+                <div
+                  className={`grid transition-all duration-300 ease-in-out ${
+                    openAccordion === 1
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div className="pt-4 lg:pt-6 flex gap-2 sm:gap-8 xl:gap-12">
+                      <div className="w-[10%]"></div>
+                      <p className="flex-1/2">
+                        We design intuitive mobile apps and web pages that
+                        elevate user experiences and drive engagement. Our team
+                        blends creativity with functionality to craft seamless,
+                        user-centric digital solutions tailored to your needs.
+                      </p>
+                      <div className="w-[15%] sm:w-[10%] lg:w-[5%]"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion">
+                <h5 className="font-anton text-4xl text-white">
+                  <button
+                    type="button"
+                    className="flex items-center w-full justify-start gap-2 sm:gap-8 xl:gap-12 transition cursor-pointer py-2.5"
+                    onClick={() => toggleAccordion(2)}
+                    aria-expanded={openAccordion === 2}
+                    aria-controls="accordion-collapse-body-2"
+                  >
+                    <span className="w-[10%] text-left">02</span>
+                    <span className="flex-1/2 text-left">
+                      Mobile & Web Apps
+                    </span>
+                    <div className="w-[15%] sm:w-[10%] lg:w-[5%]">
+                      <div
+                        className={`pagination-btn rounded-full flex justify-center items-center justify-self-end font-anton text-2xl cursor-pointer ${
+                          openAccordion === 2 ? "active" : ""
+                        }`}
+                      >
+                        <svg
+                          className={`transition-transform duration-200 ${
+                            openAccordion === 2 ? "rotate-180" : ""
+                          }`}
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M13.0008 16.1716L18.3648 10.8076L19.779 12.2218L12.0008 20L4.22266 12.2218L5.63688 10.8076L11.0008 16.1716V4H13.0008V16.1716Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </h5>
+                <div
+                  className={`grid transition-all duration-300 ease-in-out ${
+                    openAccordion === 2
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div className="pt-6 flex gap-2 sm:gap-8 xl:gap-12">
+                      <div className="w-[10%]"></div>
+                      <p className="flex-1/2">
+                        We design intuitive mobile apps and web pages that
+                        elevate user experiences and drive engagement. Our team
+                        blends creativity with functionality to craft seamless,
+                        user-centric digital solutions tailored to your needs.
+                      </p>
+                      <div className="w-[15%] sm:w-[10%] lg:w-[5%]"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion">
+                <h5 className="font-anton text-4xl text-white">
+                  <button
+                    type="button"
+                    className="flex items-center w-full justify-start gap-2 sm:gap-8 xl:gap-12 transition cursor-pointer py-2.5"
+                    onClick={() => toggleAccordion(3)}
+                    aria-expanded={openAccordion === 3}
+                    aria-controls="accordion-collapse-body-3"
+                  >
+                    <span className="w-[10%] text-left">03</span>
+                    <span className="flex-1/2 text-left">Design Systems</span>
+                    <div className="w-[15%] sm:w-[10%] lg:w-[5%]">
+                      <div
+                        className={`pagination-btn rounded-full flex justify-center items-center justify-self-end font-anton text-2xl cursor-pointer ${
+                          openAccordion === 3 ? "active" : ""
+                        }`}
+                      >
+                        <svg
+                          className={`transition-transform duration-200 ${
+                            openAccordion === 3 ? "rotate-180" : ""
+                          }`}
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M13.0008 16.1716L18.3648 10.8076L19.779 12.2218L12.0008 20L4.22266 12.2218L5.63688 10.8076L11.0008 16.1716V4H13.0008V16.1716Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </h5>
+                <div
+                  className={`grid transition-all duration-300 ease-in-out ${
+                    openAccordion === 3
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div className="pt-6 flex gap-2 sm:gap-8 xl:gap-12">
+                      <div className="w-[10%]"></div>
+                      <p className="flex-1/2">
+                        We design intuitive mobile apps and web pages that
+                        elevate user experiences and drive engagement. Our team
+                        blends creativity with functionality to craft seamless,
+                        user-centric digital solutions tailored to your needs.
+                      </p>
+                      <div className="w-[15%] sm:w-[10%] lg:w-[5%]"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            {/* <div id="accordion-collapse" data-accordion="collapse">
-              <h2 id="accordion-collapse-heading-1">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-collapse-body-1"
-                  aria-expanded="true"
-                  aria-controls="accordion-collapse-body-1"
-                >
-                  <span>What is Flowbite?</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-collapse-body-1"
-                className="hidden"
-                aria-labelledby="accordion-collapse-heading-1"
-              >
-                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Flowbite is an open-source library of interactive components
-                    built on top of Tailwind CSS including buttons, dropdowns,
-                    modals, navbars, and more.
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Check out this guide to learn how to{" "}
-                    <a
-                      href="/docs/getting-started/introduction/"
-                      className="text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      get started
-                    </a>{" "}
-                    and start developing websites even faster with components on
-                    top of Tailwind CSS.
-                  </p>
-                </div>
-              </div>
-              <h2 id="accordion-collapse-heading-2">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-collapse-body-2"
-                  aria-expanded="false"
-                  aria-controls="accordion-collapse-body-2"
-                >
-                  <span>Is there a Figma file available?</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-collapse-body-2"
-                className="hidden"
-                aria-labelledby="accordion-collapse-heading-2"
-              >
-                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Flowbite is first conceptualized and designed using the
-                    Figma software so everything you see in the library has a
-                    design equivalent in our Figma file.
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Check out the{" "}
-                    <a
-                      href="https://flowbite.com/figma/"
-                      className="text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      Figma design system
-                    </a>{" "}
-                    based on the utility classes from Tailwind CSS and
-                    components from Flowbite.
-                  </p>
-                </div>
-              </div>
-              <h2 id="accordion-collapse-heading-3">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-collapse-body-3"
-                  aria-expanded="false"
-                  aria-controls="accordion-collapse-body-3"
-                >
-                  <span>
-                    What are the differences between Flowbite and Tailwind UI?
-                  </span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-collapse-body-3"
-                className="hidden"
-                aria-labelledby="accordion-collapse-heading-3"
-              >
-                <div className="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    The main difference is that the core components from
-                    Flowbite are open source under the MIT license, whereas
-                    Tailwind UI is a paid product. Another difference is that
-                    Flowbite relies on smaller and standalone components,
-                    whereas Tailwind UI offers sections of pages.
-                  </p>
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    However, we actually recommend using both Flowbite, Flowbite
-                    Pro, and even Tailwind UI as there is no technical reason
-                    stopping you from using the best of two worlds.
-                  </p>
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Learn more about these technologies:
-                  </p>
-                  <ul className="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                    <li>
-                      <a
-                        href="https://flowbite.com/pro/"
-                        className="text-blue-600 dark:text-blue-500 hover:underline"
-                      >
-                        Flowbite Pro
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://tailwindui.com/"
-                        rel="nofollow"
-                        className="text-blue-600 dark:text-blue-500 hover:underline"
-                      >
-                        Tailwind UI
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
