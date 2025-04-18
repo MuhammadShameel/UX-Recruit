@@ -4,8 +4,6 @@ import "../../styles/projects.css";
 
 import heroShape from "../../../public/assets/images/heroShape.svg";
 
-import imgTop from "../../../public/assets/images/Img-Sect-Top.png";
-import imgBottom from "../../../public/assets/images/Img-Sect-Bottom.png";
 import CardImgOne from "../../../public/assets/images/image-card-1.png";
 import CardImgTwo from "../../../public/assets/images/image-card-2.png";
 import CardImgThree from "../../../public/assets/images/image-card-3.png";
