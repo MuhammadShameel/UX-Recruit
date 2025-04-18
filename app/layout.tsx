@@ -4,6 +4,8 @@ import "./globals.css";
 import { Navbar } from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Anton, Manrope } from "next/font/google";
+import "flowbite";
+import FlowbiteInit from "./components/FlowbiteInit";
 
 const anton = Anton({ subsets: ["latin"], weight: "400" });
 const manrope = Manrope({ subsets: ["latin"], weight: ["200", "400", "800"] });
@@ -34,6 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${manrope.className} ${anton.className} antialiased`}
       >
         <Navbar />
+        <FlowbiteInit />
         {children}
         <Footer />
       </body>

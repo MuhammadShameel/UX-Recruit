@@ -288,9 +288,9 @@ const Landing = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     A Dedicated Design Team
-                  </h5>
+                  </h6>
                   <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Forget the hassle of hiring and managing multiple designers
                     or freelancers. With us, you get a dedicated team, including
@@ -308,9 +308,9 @@ const Landing = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Real-Time Design Collaboration
-                  </h5>
+                  </h6>
                   <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Access a live project dashboard where you can review
                     designs, request unlimited revisions, and communicate
@@ -328,9 +328,9 @@ const Landing = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Faster Design Cycles
-                  </h5>
+                  </h6>
                   <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Our proven design workflows eliminate delays and minimize
                     feedback loops. Experience up to 4x faster project
@@ -347,9 +347,9 @@ const Landing = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Weekly Active Design Sprints
-                  </h5>
+                  </h6>
                   <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     We approach each week with focused design sprints,
                     delivering prioritized tasks and updates on a weekly basis.
@@ -367,9 +367,9 @@ const Landing = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Unlimited Tasks & Revisions
-                  </h5>
+                  </h6>
                   <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     Once subscribed, you unlock unlimited design requests.
                     Whether it's creating a mobile app interface, rebranding
@@ -388,9 +388,9 @@ const Landing = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     We're Not Just Designers, We're Your Partners
-                  </h5>
+                  </h6>
                   <p className="text-black font-manrope mt-2 text-sm sm:text-base">
                     You're not just another client to us. You're a partner.
                     That's why we offer resources and strategic support to help
@@ -625,9 +625,9 @@ const Landing = () => {
                 </div>
                 <div className="flex flex-col items-center self-stretch">
                   <div className="flex bg-white h-[2.188rem] justify-center rounded-br-none rounded-full w-[2.188rem] items-center md:h-[3.75rem] md:w-[3.75rem] sm:h-[3.25rem] sm:w-[3.25rem]">
-                    <h5 className="font-normal leading-[1.375rem] primary-color">
+                    <h6 className="font-normal leading-[1.375rem] primary-color">
                       1
-                    </h5>
+                    </h6>
                   </div>
                   <div className="bg-[#353344] h-full w-[0.313rem] absolute top-0 z-[-1]">
                     <div className="bg-purple h-[0%] w-full"></div>
@@ -658,12 +658,12 @@ const Landing = () => {
                 </div>
                 <div className="flex flex-col items-center self-stretch">
                   <div className="flex bg-[#353344] h-[2.188rem] justify-center rounded-br-none rounded-full w-[2.188rem] items-center md:h-[3.75rem] md:w-[3.75rem] sm:h-[3.25rem] sm:w-[3.25rem]">
-                    <h5
+                    <h6
                       className="font-normal leading-[1.375rem]"
                       style={{ color: "#B7B7B7" }}
                     >
                       2
-                    </h5>
+                    </h6>
                   </div>
                   <div className="bg-[#353344] h-full w-[0.313rem] absolute top-0 z-[-1]">
                     <div className="bg-purple h-0 w-full"></div>
@@ -695,12 +695,12 @@ const Landing = () => {
                 </div>
                 <div className="flex flex-col items-center self-stretch">
                   <div className="flex bg-[#353344] h-[2.188rem] justify-center rounded-br-none rounded-full w-[2.188rem] items-center md:h-[3.75rem] md:w-[3.75rem] sm:h-[3.25rem] sm:w-[3.25rem]">
-                    <h5
+                    <h6
                       className="font-normal leading-[1.375rem]"
                       style={{ color: "#B7B7B7" }}
                     >
                       3
-                    </h5>
+                    </h6>
                   </div>
                   <div className="bg-[#353344] h-full w-[0.313rem] absolute top-0 z-[-1]">
                     <div className="bg-purple h-[0%] w-full"></div>
@@ -731,12 +731,12 @@ const Landing = () => {
                 </div>
                 <div className="flex flex-col items-center self-stretch">
                   <div className="flex bg-[#353344] h-[2.188rem] justify-center rounded-br-none rounded-full w-[2.188rem] items-center md:h-[3.75rem] md:w-[3.75rem] sm:h-[3.25rem] sm:w-[3.25rem]">
-                    <h5
+                    <h6
                       className="font-normal leading-[1.375rem]"
                       style={{ color: "#B7B7B7" }}
                     >
                       4
-                    </h5>
+                    </h6>
                   </div>
                   <div className="bg-[#353344] h-full w-[0.313rem] absolute top-0 z-[-1]">
                     <div className="bg-purple h-[0%] w-full"></div>
@@ -767,12 +767,12 @@ const Landing = () => {
                 </div>
                 <div className="flex flex-col items-center self-stretch">
                   <div className="flex bg-[#353344] h-[2.188rem] justify-center rounded-br-none rounded-full w-[2.188rem] items-center md:h-[3.75rem] md:w-[3.75rem] sm:h-[3.25rem] sm:w-[3.25rem]">
-                    <h5
+                    <h6
                       className="font-normal leading-[1.375rem]"
                       style={{ color: "#B7B7B7" }}
                     >
                       5
-                    </h5>
+                    </h6>
                   </div>
                 </div>
                 <div className="md:p-0 pl-4">
