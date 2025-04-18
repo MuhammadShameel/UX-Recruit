@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { Check, X } from "lucide-react";
 import "../../styles/projects.css";
 
 import heroShape from "../../../public/assets/images/heroShape.svg";

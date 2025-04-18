@@ -441,7 +441,7 @@ const Landing = () => {
                   {["IOS", "SWIFT UI", "NODE.JS"].map((tech, i) => (
                     <li
                       key={i}
-                      className="font-anton font-normal hover:cursor-pointer leading-[120%] px-2.5 text-gray-600"
+                      className="font-anton font-normal hover:cursor-pointer leading-[120%] pr-5 text-gray-600"
                     >
                       {tech}
                     </li>
