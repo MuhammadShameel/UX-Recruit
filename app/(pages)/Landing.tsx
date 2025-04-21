@@ -587,7 +587,7 @@ const Landing = () => {
           </div>
 
           <h2
-            className="text-outline -bottom-5 -mt-8 font-anton font-normal leading-[100%] lg:absolute lg:mt-0 tracking-[-0.25rem] uppercase"
+            className="text-outline -bottom-7 -mt-8 font-anton font-normal leading-[100%] lg:absolute lg:mt-0 tracking-[-0.25rem] uppercase"
             style={{ WebkitTextStrokeColor: "#fff" }}
           >
             SER
