@@ -170,10 +170,6 @@ img {
   box-shadow: 0px 0px 10px 0px rgba(214, 140, 203, 0.8);
 }
 
-.hero_base_img {
-  /* width: 385px; */
-}
-
 @keyframes marquee {
   0% {
     transform: translateX(0);
