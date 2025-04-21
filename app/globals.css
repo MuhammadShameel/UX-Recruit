@@ -352,3 +352,9 @@ img {
   background: rgba(255, 255, 255, 0.1);
   color: #62606f;
 }
+
+@media (min-width: 1280px) and (max-width: 1380px) {
+  .rating-box {
+    right: -10px;
+  }
+}
