@@ -80,9 +80,9 @@ const Blogs = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     A Dedicated Design Team
-                  </h5>
+                  </h6>
                   <p className="text-white font-manrope mt-2 text-sm sm:text-base">
                     Forget the hassle of hiring and managing multiple designers
                     or freelancers. With us, you get a dedicated team, including
@@ -100,9 +100,9 @@ const Blogs = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Real-Time Design Collaboration
-                  </h5>
+                  </h6>
                   <p className="text-white font-manrope mt-2 text-sm sm:text-base">
                     Access a live project dashboard where you can review
                     designs, request unlimited revisions, and communicate
@@ -120,9 +120,9 @@ const Blogs = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Faster Design Cycles
-                  </h5>
+                  </h6>
                   <p className="text-white font-manrope mt-2 text-sm sm:text-base">
                     Our proven design workflows eliminate delays and minimize
                     feedback loops. Experience up to 4x faster project
@@ -139,9 +139,9 @@ const Blogs = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Weekly Active Design Sprints
-                  </h5>
+                  </h6>
                   <p className="text-white font-manrope mt-2 text-sm sm:text-base">
                     We approach each week with focused design sprints,
                     delivering prioritized tasks and updates on a weekly basis.
@@ -159,9 +159,9 @@ const Blogs = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Unlimited Tasks & Revisions
-                  </h5>
+                  </h6>
                   <p className="text-white font-manrope mt-2 text-sm sm:text-base">
                     Once subscribed, you unlock unlimited design requests.
                     Whether it's creating a mobile app interface, rebranding
@@ -180,9 +180,9 @@ const Blogs = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     We're Not Just Designers, We're Your Partners
-                  </h5>
+                  </h6>
                   <p className="text-white font-manrope mt-2 text-sm sm:text-base">
                     You're not just another client to us. You're a partner.
                     That's why we offer resources and strategic support to help
@@ -198,9 +198,9 @@ const Blogs = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     A Dedicated Design Team
-                  </h5>
+                  </h6>
                   <p className="text-white font-manrope mt-2 text-sm sm:text-base">
                     Forget the hassle of hiring and managing multiple designers
                     or freelancers. With us, you get a dedicated team, including
@@ -218,9 +218,9 @@ const Blogs = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Real-Time Design Collaboration
-                  </h5>
+                  </h6>
                   <p className="text-white font-manrope mt-2 text-sm sm:text-base">
                     Access a live project dashboard where you can review
                     designs, request unlimited revisions, and communicate
@@ -238,9 +238,9 @@ const Blogs = () => {
                   className="w-full"
                 />
                 <div className="mt-6 sm:mt-10">
-                  <h5 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
+                  <h6 className="text-lg sm:text-xl font-anton mt-2 sm:mt-4">
                     Faster Design Cycles
-                  </h5>
+                  </h6>
                   <p className="text-white font-manrope mt-2 text-sm sm:text-base">
                     Our proven design workflows eliminate delays and minimize
                     feedback loops. Experience up to 4x faster project

@@ -1,9 +1,10 @@
 import React from "react";
+import Service from "./Service";
 
 const Page = () => {
   return (
     <>
-      <p>this is dynamic blog page</p>
+      <Service />
     </>
   );
 };
